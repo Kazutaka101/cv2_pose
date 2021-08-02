@@ -1,0 +1,9 @@
+conda create -n cv2_pose python=3.8.10
+pip install opencv-python 
+python3 -m venv mp_env && source mp_env/bin/activate
+pip install mediapipe
+cd ~/anaconda3/envs/cv2_pose/
+git clone https://github.com/Kazutaka101/mediapipe_pose.git
+cd ~/anaconda3/envs/cv2_pose/mediapipe_pose/
+python minimum.py
+
