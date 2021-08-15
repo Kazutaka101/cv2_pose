@@ -53,11 +53,17 @@ pose = mpPose.Pose(static_image_mode=False,
                 smooth_landmarks=True,
                 min_detection_confidence=0.5,
                 min_tracking_confidence=0.5)
-
-cap = cv2.VideoCapture("./dance.mp4")
+h=400
+w=400
+cap = cv2.VideoCapture(0)
 pTime=0
 success, img = cap.read()
-smile = cv2.imread("smile.jpg")
+imgH = 200 
+imgW = 200  
+imgMidH = int(imgH/2)
+imgMidW = int(imgW/2)
+smile = cv2.imread("smile.jpg",-1)
+smile = cv2.resize(smile,(imgH,imgW))
 while True:
     success, img = cap.read()
     #BGR => RGB変換
@@ -65,11 +71,21 @@ while True:
     #RGB画像に対して解析をかける。
     results = pose.process(imgRGB)
     #resultsにlandmarkがあれば解析できている
+    resized_img = cv2.resize(img,(h,w))
     try:
         landmarks = results.pose_landmarks.landmark
         #骨格を描画、線を引く POSE_CONNECTIONSを消せば骨格点だけ
-        mpDraw.draw_landmarks(img,results.pose_landmarks,mpPose.POSE_CONNECTIONS)
-        print(landmarks[mpPose.PoseLandmark.NOSE.value])
+        mpDraw.draw_landmarks(resized_img,results.pose_landmarks,mpPose.POSE_CONNECTIONS)
+        #print(landmarks[mpPose.PoseLandmark.NOSE.value])
+        noseX = (int(landmarks[mpPose.PoseLandmark.NOSE.value].x*w))
+        noseY = (int(landmarks[mpPose.PoseLandmark.NOSE.value].y*h))
+        print("noseX:" + str(noseX))
+        print("noseY:" + str(noseY))
+        print("")
+        resized_img[(noseY-imgMidW):(noseY+imgMidW),(noseX-imgMidH):(noseX+imgMidH)] = smile[0:imgW,0:imgH]
+        print("noseX1 = " + str(noseX-imgMidW))
+        print("noseY1 = " + str(noseY-imgMidH))
+        print("")
     except:
         #landmarkがなければエラーが出てしまう。
         pass
@@ -77,10 +93,8 @@ while True:
     cTime = time.time()
     fps = 1/(cTime-pTime)
     pTime = cTime
-
-    cv2.putText(img,str(int(fps)),(70,50),cv2.FONT_HERSHEY_PLAIN,3,(255,0,0),3)
-
-    resized_img = cv2.resize(img,(800,400))
+    #draw FPS
+    cv2.putText(resized_img,str(int(fps)),(70,50),cv2.FONT_HERSHEY_PLAIN,3,(255,255,0),3)
     cv2.imshow("Image",resized_img)
     if cv2.waitKey(10) & 0xFF == ord('q'):
         break
