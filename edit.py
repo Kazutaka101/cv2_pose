@@ -55,7 +55,7 @@ pose = mpPose.Pose(static_image_mode=False,
                 min_tracking_confidence=0.5)
 h=400
 w=400
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(-1)
 pTime=0
 success, img = cap.read()
 imgH = 200 
