@@ -37,14 +37,14 @@ import cv2
 import time
 import mediapipe as mp
 import numpy as np
-from playsound import playsound
+import time
 
 
 
 mpDraw = mp.solutions.drawing_utils
 mpPose = mp.solutions.pose
 pose = mpPose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5)
-cap = cv2.VideoCapture("./push-ups.mp4")
+cap = cv2.VideoCapture("/home/kazutaka/codes/mediapipe_pose/data/videos/training_videos/squat.mp4")
 pTime=0
 
 
@@ -65,7 +65,7 @@ def cal_angle(a,b,c):
     return angle
 
 cntForMode = 0
-modeIdx = 0
+modeIdx = 1
 modes = ["ARM CURL", "SQUAT", "PUSH-UPS" ]
 mode = modes[modeIdx]
 cnt = 0
@@ -83,7 +83,7 @@ def changeMode(a):
     mode = modes[modeIdx]
     return mode
 
-
+startTime = time.time()
 while True:
     success, img = cap.read()
     img = cv2.resize(img, (640,480))
@@ -107,6 +107,13 @@ while True:
     if results.pose_landmarks:
         mpDraw.draw_landmarks(img,results.pose_landmarks,mpPose.POSE_CONNECTIONS)
     
+
+    #wait 3 sec at execed
+
+
+         
+    
+
     #extract specific landmark
     try:
         #----example extract specific landmark----
@@ -127,7 +134,7 @@ while True:
 
             elif angle <= 90:
                 if isBent is False:
-                    playsound("./pingpong.mp3")
+                    #playsound("./pingpong.mp3")
                     cnt = cnt + 1 
                     isBent = True
 
@@ -139,15 +146,24 @@ while True:
             Rhip = [landmarks[mpPose.PoseLandmark.RIGHT_HIP.value].x,landmarks[mpPose.PoseLandmark.RIGHT_HIP.value].y]
             Rknee = [landmarks[mpPose.PoseLandmark.RIGHT_KNEE.value].x,landmarks[mpPose.PoseLandmark.RIGHT_KNEE.value].y]
             Rankle = [landmarks[mpPose.PoseLandmark.RIGHT_ANKLE.value].x,landmarks[mpPose.PoseLandmark.RIGHT_ANKLE.value].y]
+            Lanke = [landmarks[mpPose.PoseLandmark.LEFT_ANKLE.value].x,landmarks[mpPose.PoseLandmark.LEFT_ANKLE.value].y]
+            Rfoot = [landmarks[mpPose.PoseLandmark.RIGHT_FOOT_INDEX.value].x,landmarks[mpPose.PoseLandmark.RIGHT_FOOT_INDEX.value].y]
+            Lfoot = [landmarks[mpPose.PoseLandmark.LEFT_FOOT_INDEX.value].x,landmarks[mpPose.PoseLandmark.LEFT_FOOT_INDEX.value].y]
             angle = cal_angle(Rhip,Rknee,Rankle)
-            print(angle)
             if angle >= 160:
                 if isBent is True:
                     isBent = False
+                    #cheking form by  Rfoot.x - Rankle.x
+                    rightDiff = Rfoot[0] - Rankle[0]
+                    print("---right---")
+                    print(rightDiff) 
 
+                    #cheking form by Lanke.x - Lfoot.x
+                    leftDiff = Lanke[0] - Lfoot[0]
+                    print("---left---")
+                    print(leftDiff)
             elif angle <= 90:
                 if isBent is False:
-                    playsound("./pingpong.mp3")
                     cnt = cnt + 1 
                     isBent = True
 
@@ -167,21 +183,17 @@ while True:
 
             elif angle <= 90:
                 if isBent is False:
-                    playsound("./pingpong.mp3")
                     cnt = cnt + 1 
                     isBent = True
 
                 elif isBent is True:
                     pass
             cv2.putText(img, str(angle), tuple(np.multiply(Relbow, [640,480]).astype(int)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2, cv2.LINE_AA)
- 
+
 
 
         #show angle
-        
                                 
-
-                    
     except:
         pass
 
@@ -224,6 +236,7 @@ while True:
 
     
     #resized_img = cv2.resize(img,(800,400))
+    #img = cv2.resize(img,(10,10))
     
     cv2.imshow("Image",img)
     cv2.waitKey(1)

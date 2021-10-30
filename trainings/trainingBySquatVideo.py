@@ -44,7 +44,7 @@ import time
 mpDraw = mp.solutions.drawing_utils
 mpPose = mp.solutions.pose
 pose = mpPose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5)
-cap = cv2.VideoCapture("./squat.mp4")
+cap = cv2.VideoCapture("/home/kazutaka/codes/mediapipe_pose/data/videos/training_videos/squat.mp4")
 pTime=0
 
 

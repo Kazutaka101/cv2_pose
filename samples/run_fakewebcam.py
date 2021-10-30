@@ -33,6 +33,6 @@ while True:
 	
 	resized_img = cv2.resize(imgRGB,(img.shape[1],img.shape[0]))
 	camera.schedule_frame(resized_img)
-	cv2.imshow("Image",resized_img)
+	#cv2.imshow("Image",resized_img)
 	cv2.waitKey(1)
 
