@@ -12,7 +12,6 @@ cap = cv2.VideoCapture(0)
 h = 900
 w = 1600
 
-
 #start and end ary X and y
 numberAryStartH = int(h * 0.1)
 numberAryStartW = int(w * 0.1)
@@ -101,7 +100,8 @@ NumberBin = 0b0000000000
 stime = time.time()
 passTime = 0
 selectedNums = []
-modiY = numberAryH * 0.1
+x = 0
+y = 0
 while True:
     success, img = cap.read()
     img = cv2.resize(img,(w,h))
@@ -154,10 +154,7 @@ while True:
         rightWRIST = [landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].x,landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].y]
         x = rightWRIST[0]*w 
         y = rightWRIST[1]*h
-        
-        #数字ではなく、高さの割合で出すべき
-        y = y - modiY
-
+        y = y - 20
         cv2.circle(img, (int(x),int(y)), 50, (0,0,255), thickness=-1, lineType=cv2.LINE_8, shift=0)
         
         #print(x, y)
