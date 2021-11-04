@@ -6,11 +6,11 @@ import inspect
 mpDraw = mp.solutions.drawing_utils
 mpPose = mp.solutions.pose
 
-pose = mpPose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5)
+pose = mpPose.Pose(min_detection_confidence=0.7, min_tracking_confidence=0.7)
 
 cap = cv2.VideoCapture(0)
-h = 480
-w = 800
+h = 900
+w = 1600
 
 #start and end ary X and y
 numberAryStartH = int(h * 0.1)
@@ -51,6 +51,7 @@ numberAryX = []
 numberAryY = []
 
 numberXlen = 0
+showNums = ""
 #numberXLen = aryX[0] - numberAryStartW
 #print(numberXLen)
 #print(int(numberXLen/2) + numberAryStartW)
@@ -81,6 +82,24 @@ print(numberAryY)
 print("---numberAryX---")
 print(numberAryX)
 
+#selected number X, Y
+fromSelectedNumX = int(w*0.85)
+fromSelectedNumY = int(h*0.1) 
+
+print("--fromSelectedNumX and Y")
+print(fromSelectedNumX,fromSelectedNumY)
+
+selectedNumX = int((w - fromSelectedNumX)/2) + fromSelectedNumX
+selectedNumY = int(fromSelectedNumY / 2)
+
+print("--selectedNumX---")
+print(selectedNumX, selectedNumY)
+
+selectedNum = "None"
+NumberBin = 0b0000000000
+stime = time.time()
+passTime = 0
+selectedNums = []
 while True:
     success, img = cap.read()
     img = cv2.resize(img,(w,h))
@@ -123,17 +142,170 @@ while True:
     cv2.putText(img, "8", (numberAryX[3], numberAryY[1]),cv2.FONT_HERSHEY_PLAIN, 3,(0, 255,0 ), 3, cv2.LINE_AA)
     cv2.putText(img, "9", (numberAryX[4], numberAryY[1]),cv2.FONT_HERSHEY_PLAIN, 3,(0, 255,0 ), 3, cv2.LINE_AA)
 
+    #detect hand on NumberArray
+    try:
+        landmarks = results.pose_landmarks.landmark
+        rightWRIST = [landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].x,landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].y]
+        x = rightWRIST[0]*w 
+        y = rightWRIST[1]*h
+       # print(x, y)
+
+        #detect hand on top NumberArray
+        if numberAryStartW < x and numberAryStartH < y and aryX[0] > x and aryY > y:
+            selectedNum = "0"
+            #0が立っていない、つまり、初期状態である
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b1000000000
+
+            #この対応indexに1が立っている。つまり、前と同じ場所にとどまっている。
+            elif NumberBin == 0b1000000000:
+                #proceed timer
+                #この対応index以外に1が立っている。つまり、違う場所から来たのである。
+
+                etime = time.time()
+ 
+            else:
+                #タイマーをリセットして、このindexを代入する
+                #timer reset
+                stime = time.time()
+                NumberBin = 0b1000000000
+            
+            
+        elif aryX[0] < x and numberAryStartH < y and aryX[1] > x and aryY > y:
+            selectedNum = "1"
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b0100000000
+
+            elif NumberBin == 0b0100000000:
+                etime = time.time()
     
+            else:
+                stime = time.time()
+                NumberBin = 0b0100000000
+            
+        elif aryX[1] < x and numberAryStartH < y and aryX[2] > x and aryY > y:
+            selectedNum = "2"
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b0010000000
+
+            elif NumberBin == 0b0010000000:
+                etime = time.time()
+     
+            else:
+                stime = time.time()
+                NumberBin = 0b0010000000
+
+        elif aryX[2] < x and numberAryStartH < y and aryX[3] > x and aryY > y:
+            selectedNum = "3"
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b0001000000
+
+            elif NumberBin == 0b0001000000:
+                etime = time.time()
+   
+            else:
+                stime = time.time()
+                NumberBin = 0b0001000000
+
+        elif aryX[3] < x and numberAryStartH < y and numberAryW > x and aryY > y:
+            selectedNum = "4"
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b0000100000
+
+            elif NumberBin == 0b0000100000:
+                etime = time.time()
+   
+            else:
+                stime = time.time()
+                NumberBin = 0b0000100000
+
+        #detect hand on bottom NumberArray
+        elif numberAryStartW < x and aryY < y and aryX[0] > x and numberAryH > y:
+            selectedNum = "5"
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b0000010000
+
+            elif NumberBin == 0b0000010000:
+                etime = time.time()
+     
+            else:
+                stime = time.time()
+                NumberBin = 0b0000010000
+        elif aryX[0] < x and aryY < y and aryX[1] > x and numberAryH > y:
+            selectedNum = "6"
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b0000001000
+
+            elif NumberBin == 0b0000001000:
+                etime = time.time()
+  
+            else:
+                stime = time.time()
+                NumberBin = 0b0000001000
+        elif aryX[1] < x and aryY < y and aryX[2] > x and numberAryH > y:
+            selectedNum = "7"
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b0000000100
+
+            elif NumberBin == 0b0000000100:
+                etime = time.time()
+
+            else:
+                stime = time.time()
+                NumberBin = 0b0000000100
+        elif aryX[2] < x and aryY < y and aryX[3] > x and numberAryH > y:            
+            selectedNum = "8"
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b0000000010
+
+            elif NumberBin == 0b0000000010:
+                etime = time.time()
+  
+            else:
+                stime = time.time()
+                NumberBin = 0b0000000010
+        elif aryX[3] < x and aryY < y and numberAryW > x and numberAryH > y: 
+            selectedNum = "9"
+            if NumberBin & 0b1111111111 == 0:
+                NumberBin = 0b0000000001
+
+            elif NumberBin == 0b0000000001:
+                etime = time.time()
+                
+            else:
+                stime = time.time()
+                NumberBin = 0b0000000001
+        else:
+            selectedNum = "None"
+            stime = time.time()
+        passTime = etime - stime
+        #print(passTime)
 
 
+    except:
+        print("Error Occuerd")
+        pass
+    #draw selected number. it should be counter  3 2 1
+    if passTime < 0:
+        cv2.putText(img,"3", (selectedNumX,selectedNumY),cv2.FONT_HERSHEY_PLAIN,3,(0,255,0),3,cv2.LINE_AA)
+    else:
+        timer =  3 - int(passTime)
+        #3秒たった
+        if timer < 0:
+            selectedNums.append(selectedNum)
+            stime = time.time()
 
+        cv2.putText(img,str(timer), (selectedNumX,selectedNumY),cv2.FONT_HERSHEY_PLAIN,3,(0,255,0),3,cv2.LINE_AA)
+
+    #draw selected numbers
+    showNumX = int(w * 0.1)
+    showNumY = int(h * 0.9)
+    showNums = "".join(selectedNums)
+    cv2.putText(img,showNums, (showNumX,showNumY),cv2.FONT_HERSHEY_PLAIN,3,(0,255,0),3,cv2.LINE_AA)
+    #print(selectedNums)
 
 
     
-    
-    
-
-
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
     cv2.imshow("sample", img)
