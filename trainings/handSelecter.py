@@ -100,15 +100,20 @@ NumberBin = 0b0000000000
 stime = time.time()
 passTime = 0
 selectedNums = []
+x = 0
+y = 0
 while True:
     success, img = cap.read()
     img = cv2.resize(img,(w,h))
     img = cv2.flip(img, 1)
     #Pose Detection
     results = pose.process(img)
+    
+    #drawing line between  connection to connection  
+    #if results.pose_landmarks:
+    #   mpDraw.draw_landmarks(img,results.pose_landmarks,mpPose.POSE_CONNECTIONS)
 
-    if results.pose_landmarks:
-       mpDraw.draw_landmarks(img,results.pose_landmarks,mpPose.POSE_CONNECTIONS)
+
     #outline
     #top
     cv2.line(img,(numberAryStartW,numberAryStartH),(numberAryW,numberAryStartH),(255,0,0),thickness=5)
@@ -143,12 +148,15 @@ while True:
     cv2.putText(img, "9", (numberAryX[4], numberAryY[1]),cv2.FONT_HERSHEY_PLAIN, 3,(0, 255,0 ), 3, cv2.LINE_AA)
 
     #detect hand on NumberArray
+    
     try:
         landmarks = results.pose_landmarks.landmark
         rightWRIST = [landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].x,landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].y]
         x = rightWRIST[0]*w 
         y = rightWRIST[1]*h
-       # print(x, y)
+        cv2.circle(img, (int(x),int(y)), 50, (0,0,255), thickness=-1, lineType=cv2.LINE_8, shift=0)
+        
+        #print(x, y)
 
         #detect hand on top NumberArray
         if numberAryStartW < x and numberAryStartH < y and aryX[0] > x and aryY > y:
@@ -284,12 +292,14 @@ while True:
 
     except:
         print("Error Occuerd")
+        #import traceback
+        #traceback.print_exc()
         pass
     #draw selected number. it should be counter  3 2 1
     if passTime < 0:
-        cv2.putText(img,"3", (selectedNumX,selectedNumY),cv2.FONT_HERSHEY_PLAIN,3,(0,255,0),3,cv2.LINE_AA)
+        cv2.putText(img,"2", (selectedNumX,selectedNumY),cv2.FONT_HERSHEY_PLAIN,3,(0,255,0),3,cv2.LINE_AA)
     else:
-        timer =  3 - int(passTime)
+        timer =  2 - int(passTime)
         #3秒たった
         if timer < 0:
             selectedNums.append(selectedNum)
