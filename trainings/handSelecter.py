@@ -102,6 +102,7 @@ stime = time.time()
 passTime = 0
 selectedNums = []
 modiY = numberAryH * 0.1
+
 while True:
     success, img = cap.read()
     img = cv2.resize(img,(w,h))
@@ -152,18 +153,25 @@ while True:
     try:
         landmarks = results.pose_landmarks.landmark
         rightWRIST = [landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].x,landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].y]
+        leftWRIST = [landmarks[mpPose.PoseLandmark.LEFT_WRIST.value].x,landmarks[mpPose.PoseLandmark.LEFT_WRIST.value].y]
         x = rightWRIST[0]*w 
         y = rightWRIST[1]*h
+
+        x1 = leftWRIST[0] * w
+        y1 = leftWRIST[1] * h
         
         #数字ではなく、高さの割合で出すべき
         y = y - modiY
+        y1 = y1 - modiY
 
         cv2.circle(img, (int(x),int(y)), 50, (0,0,255), thickness=-1, lineType=cv2.LINE_8, shift=0)
+        cv2.circle(img, (int(x1),int(y1)), 50, (0,0,255), thickness=-1, lineType=cv2.LINE_8, shift=0)
+        
         
         #print(x, y)
 
         #detect hand on top NumberArray
-        if numberAryStartW < x and numberAryStartH < y and aryX[0] > x and aryY > y:
+        if (numberAryStartW < x and numberAryStartH < y and aryX[0] > x and aryY > y) or (numberAryStartW < x1 and numberAryStartH < y1 and aryX[0] > x1 and aryY > y1):
             selectedNum = "0"
             #0が立っていない、つまり、初期状態である
             if NumberBin & 0b1111111111 == 0:
@@ -182,8 +190,8 @@ while True:
                 stime = time.time()
                 NumberBin = 0b1000000000
             
-            
-        elif aryX[0] < x and numberAryStartH < y and aryX[1] > x and aryY > y:
+        
+        elif (aryX[0] < x and numberAryStartH < y and aryX[1] > x and aryY > y) or (aryX[0] < x1 and numberAryStartH < y1 and aryX[1] > x1 and aryY > y1):
             selectedNum = "1"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0100000000
@@ -195,7 +203,7 @@ while True:
                 stime = time.time()
                 NumberBin = 0b0100000000
             
-        elif aryX[1] < x and numberAryStartH < y and aryX[2] > x and aryY > y:
+        elif (aryX[1] < x and numberAryStartH < y and aryX[2] > x and aryY > y) or (aryX[1] < x1 and numberAryStartH < y1 and aryX[2] > x1 and aryY > y1):
             selectedNum = "2"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0010000000
@@ -207,7 +215,7 @@ while True:
                 stime = time.time()
                 NumberBin = 0b0010000000
 
-        elif aryX[2] < x and numberAryStartH < y and aryX[3] > x and aryY > y:
+        elif (aryX[2] < x and numberAryStartH < y and aryX[3] > x and aryY > y) or (aryX[2] < x1 and numberAryStartH < y1 and aryX[3] > x1 and aryY > y1) :
             selectedNum = "3"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0001000000
