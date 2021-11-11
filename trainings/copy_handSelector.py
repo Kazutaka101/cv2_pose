@@ -12,6 +12,7 @@ cap = cv2.VideoCapture(0)
 h = 900
 w = 1600
 
+
 #start and end ary X and y
 numberAryStartH = int(h * 0.1)
 numberAryStartW = int(w * 0.1)
@@ -21,6 +22,12 @@ print("start X, Y")
 print(numberAryStartW,numberAryStartH)
 print("end X , Y")
 print(numberAryW, numberAryH)
+
+okButtonX = int(w * 0.85)
+okButtonY = int(h * 0.85)
+print("ok button X, Y")
+print(okButtonX, okButtonY)
+
 
 sum = 0
 
@@ -96,12 +103,14 @@ print("--selectedNumX---")
 print(selectedNumX, selectedNumY)
 
 selectedNum = "None"
+#1000... => 0
+#0100...=> 1
 NumberBin = 0b0000000000
 stime = time.time()
 passTime = 0
 selectedNums = []
-x = 0
-y = 0
+modiY = numberAryH * 0.1
+
 while True:
     success, img = cap.read()
     img = cv2.resize(img,(w,h))
@@ -147,20 +156,43 @@ while True:
     cv2.putText(img, "8", (numberAryX[3], numberAryY[1]),cv2.FONT_HERSHEY_PLAIN, 3,(0, 255,0 ), 3, cv2.LINE_AA)
     cv2.putText(img, "9", (numberAryX[4], numberAryY[1]),cv2.FONT_HERSHEY_PLAIN, 3,(0, 255,0 ), 3, cv2.LINE_AA)
 
+    #delete button
+
+    #ok button
+    cv2.line(img,(okButtonX, okButtonY ),(w,okButtonY),(255,0,0),thickness=5)
+    cv2.line(img,(okButtonX, okButtonY ),(okButtonX,h),(255,0,0),thickness=5)
+    cv2.line(img,(okButtonX, h),(w,h),(255,0,0),thickness=5)
+    cv2.line(img,(w, okButtonY ),(w,h),(255,0,0),thickness=5)
+    
+
+
+
+
+
     #detect hand on NumberArray
     
     try:
         landmarks = results.pose_landmarks.landmark
         rightWRIST = [landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].x,landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].y]
+        leftWRIST = [landmarks[mpPose.PoseLandmark.LEFT_WRIST.value].x,landmarks[mpPose.PoseLandmark.LEFT_WRIST.value].y]
         x = rightWRIST[0]*w 
         y = rightWRIST[1]*h
-        y = y - 20
+
+        x1 = leftWRIST[0] * w
+        y1 = leftWRIST[1] * h
+        
+        #数字ではなく、高さの割合で出すべき
+        y = y - modiY
+        y1 = y1 - modiY
+
         cv2.circle(img, (int(x),int(y)), 50, (0,0,255), thickness=-1, lineType=cv2.LINE_8, shift=0)
+        cv2.circle(img, (int(x1),int(y1)), 50, (0,0,255), thickness=-1, lineType=cv2.LINE_8, shift=0)
+        
         
         #print(x, y)
 
         #detect hand on top NumberArray
-        if numberAryStartW < x and numberAryStartH < y and aryX[0] > x and aryY > y:
+        if (numberAryStartW < x and numberAryStartH < y and aryX[0] > x and aryY > y) or (numberAryStartW < x1 and numberAryStartH < y1 and aryX[0] > x1 and aryY > y1):
             selectedNum = "0"
             #0が立っていない、つまり、初期状態である
             if NumberBin & 0b1111111111 == 0:
@@ -179,8 +211,8 @@ while True:
                 stime = time.time()
                 NumberBin = 0b1000000000
             
-            
-        elif aryX[0] < x and numberAryStartH < y and aryX[1] > x and aryY > y:
+        
+        elif (aryX[0] < x and numberAryStartH < y and aryX[1] > x and aryY > y) or (aryX[0] < x1 and numberAryStartH < y1 and aryX[1] > x1 and aryY > y1):
             selectedNum = "1"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0100000000
@@ -192,7 +224,7 @@ while True:
                 stime = time.time()
                 NumberBin = 0b0100000000
             
-        elif aryX[1] < x and numberAryStartH < y and aryX[2] > x and aryY > y:
+        elif (aryX[1] < x and numberAryStartH < y and aryX[2] > x and aryY > y) or (aryX[1] < x1 and numberAryStartH < y1 and aryX[2] > x1 and aryY > y1):
             selectedNum = "2"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0010000000
@@ -204,7 +236,7 @@ while True:
                 stime = time.time()
                 NumberBin = 0b0010000000
 
-        elif aryX[2] < x and numberAryStartH < y and aryX[3] > x and aryY > y:
+        elif (aryX[2] < x and numberAryStartH < y and aryX[3] > x and aryY > y) or (aryX[2] < x1 and numberAryStartH < y1 and aryX[3] > x1 and aryY > y1) :
             selectedNum = "3"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0001000000
@@ -216,7 +248,7 @@ while True:
                 stime = time.time()
                 NumberBin = 0b0001000000
 
-        elif aryX[3] < x and numberAryStartH < y and numberAryW > x and aryY > y:
+        elif (aryX[3] < x and numberAryStartH < y and numberAryW > x and aryY > y) or (aryX[3] < x1 and numberAryStartH < y1 and numberAryW > x1 and aryY > y1):
             selectedNum = "4"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0000100000
@@ -229,7 +261,7 @@ while True:
                 NumberBin = 0b0000100000
 
         #detect hand on bottom NumberArray
-        elif numberAryStartW < x and aryY < y and aryX[0] > x and numberAryH > y:
+        elif (numberAryStartW < x and aryY < y and aryX[0] > x and numberAryH > y) or (numberAryStartW < x1 and aryY < y1 and aryX[0] > x1 and numberAryH > y1):
             selectedNum = "5"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0000010000
@@ -240,7 +272,7 @@ while True:
             else:
                 stime = time.time()
                 NumberBin = 0b0000010000
-        elif aryX[0] < x and aryY < y and aryX[1] > x and numberAryH > y:
+        elif (aryX[0] < x and aryY < y and aryX[1] > x and numberAryH > y) or (aryX[0] < x1 and aryY < y1 and aryX[1] > x1 and numberAryH > y1):
             selectedNum = "6"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0000001000
@@ -251,7 +283,7 @@ while True:
             else:
                 stime = time.time()
                 NumberBin = 0b0000001000
-        elif aryX[1] < x and aryY < y and aryX[2] > x and numberAryH > y:
+        elif (aryX[1] < x and aryY < y and aryX[2] > x and numberAryH > y) or (aryX[1] < x1 and aryY < y1 and aryX[2] > x1 and numberAryH > y1):
             selectedNum = "7"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0000000100
@@ -262,7 +294,7 @@ while True:
             else:
                 stime = time.time()
                 NumberBin = 0b0000000100
-        elif aryX[2] < x and aryY < y and aryX[3] > x and numberAryH > y:            
+        elif (aryX[2] < x and aryY < y and aryX[3] > x and numberAryH > y) or (aryX[2] < x1 and aryY < y1 and aryX[3] > x1 and numberAryH > y1) :            
             selectedNum = "8"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0000000010
@@ -273,7 +305,7 @@ while True:
             else:
                 stime = time.time()
                 NumberBin = 0b0000000010
-        elif aryX[3] < x and aryY < y and numberAryW > x and numberAryH > y: 
+        elif (aryX[3] < x and aryY < y and numberAryW > x and numberAryH > y) or (aryX[3] < x1 and aryY < y1 and numberAryW > x1 and numberAryH > y1): 
             selectedNum = "9"
             if NumberBin & 0b1111111111 == 0:
                 NumberBin = 0b0000000001
@@ -284,15 +316,21 @@ while True:
             else:
                 stime = time.time()
                 NumberBin = 0b0000000001
+        #ok Button detection
+        elif x > okButtonX and y > okButtonY and x < w and y < h:
+            print("aaa")
         else:
             selectedNum = "None"
             stime = time.time()
+
+
+
         passTime = etime - stime
         #print(passTime)
 
 
     except:
-        print("Error Occuerd")
+        #print("Error Occuerd")
         #import traceback
         #traceback.print_exc()
         pass
