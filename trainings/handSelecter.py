@@ -156,7 +156,7 @@ selectedNums = []
 modiY = numberAryH * 0.1
 
 #SWITCHED MODE 0 TO 1 for debugging !!
-selectModeNum = 1
+selectModeNum = 0
 showSelectedMode = ""
 while True:
     success, img = cap.read()
@@ -171,7 +171,7 @@ while True:
 
     # outline
     # top
-    if selectModeNum == 0:
+    if selectModeNum == 1:
         cv2.line(img, (numberAryStartW, numberAryStartH),
                 (numberAryW, numberAryStartH), (255, 0, 0), thickness=5)
         # left
@@ -234,7 +234,7 @@ while True:
                     cv2.FONT_HERSHEY_PLAIN, 3, (0, 255, 0), 3, cv2.LINE_AA)
 
                     
-    elif selectModeNum == 1:
+    elif selectModeNum == 0:
         #draw mode select array
         cv2.line(img, (modeArrayStartX, modeArrayStartY),
                 (modeArrayStartX, modeArrayEndY), (255, 0, 0), thickness=5)
@@ -301,7 +301,7 @@ while True:
         #print(x, y)
 
         # detect hand on top NumberArray
-        if selectModeNum == 0:
+        if selectModeNum == 1:
             if (numberAryStartW < x and numberAryStartH < y and aryX[0] > x and aryY > y) or (numberAryStartW < x1 and numberAryStartH < y1 and aryX[0] > x1 and aryY > y1):
                 selectedNum = "0"
                 # 0が立っていない、つまり、初期状態である
@@ -459,7 +459,7 @@ while True:
             passTime = etime - stime
             # print(passTime)
 
-        elif selectModeNum == 1:
+        elif selectModeNum == 0:
             #check hit ARMCURL BOX
             if (modeArrayStartX < x and modeArrayStartY < y and modeArraysX[0] > x and modeArrayEndY > y) or (modeArrayStartX < x1 and modeArrayStartY < y1 and modeArraysX[0] > x1 and modeArrayEndY > y1):
                 selectedMode = "ARMCURL"
@@ -529,7 +529,7 @@ while True:
     #process which passed 2 sec
     else:     
         timer = 2 - int(passTime)
-        if selectModeNum == 0:
+        if selectModeNum == 1:
             # passed 2 sec
             if timer < 0:
                 if selectedNum == "DEL":
@@ -540,7 +540,7 @@ while True:
                     selectedNums.append(selectedNum)
                 stime = time.time()
 
-        elif selectModeNum == 1:
+        elif selectModeNum == 0:
             if timer < 0:
                 #check not select mode , then touch ok
                 
@@ -553,18 +553,19 @@ while True:
 
                 if selectedMode == "OK" and showSelectedMode != "Please select mode before touch OK button":
                     ok = True
+                    selectModeNum = 1
                     print("GO NEXT SCENE")
         
                 stime = time.time()
                 
 
     #process which draw nums or mode
-    if selectModeNum == 0:
+    if selectModeNum == 1:
         showNums = "".join(selectedNums)
         cv2.putText(img, showNums, (showTextX, showTextY),
                 cv2.FONT_HERSHEY_PLAIN, 3, (0, 255, 0), 3, cv2.LINE_AA)
         
-    elif selectModeNum == 1:
+    elif selectModeNum == 0:
         cv2.putText(img, showSelectedMode, (showTextX, showTextY),
                 cv2.FONT_HERSHEY_PLAIN, 3, (0, 255, 0), 3, cv2.LINE_AA)
 
