@@ -7,7 +7,7 @@ mpDraw = mp.solutions.drawing_utils
 mpPose = mp.solutions.pose
 
 pose = mpPose.Pose(min_detection_confidence=0.7, min_tracking_confidence=0.7)
-
+#000000
 cap = cv2.VideoCapture(0)
 h = 900
 w = 1600
@@ -102,11 +102,11 @@ numberAryY = []
 
 numberXlen = 0
 showNums = ""
-#numberXLen = aryX[0] - numberAryStartW
-# print(numberXLen)
-#print(int(numberXLen/2) + numberAryStartW)
+showTextX = int(w * 0.1)
+showTextY = int(h * 0.9)
+ok = False
+selectedMode = ""
 
-# numberX
 for i in range(5):
     if i == 0:
         numberXlen = aryX[i] - numberAryStartW
@@ -157,7 +157,7 @@ modiY = numberAryH * 0.1
 
 #SWITCHED MODE 0 TO 1 for debugging !!
 selectModeNum = 1
-
+showSelectedMode = ""
 while True:
     success, img = cap.read()
     img = cv2.resize(img, (w, h))
@@ -460,29 +460,58 @@ while True:
             # print(passTime)
 
         elif selectModeNum == 1:
-
-            
-            if (modeArrayStartX < x and modeArrayStartY < y and modeArraysMidX[0] > x and modeArraysMidY > y) or (modeArrayStartX < x1 and modeArrayStartY < y1 and modeArraysMidX[0] > x1 and modeArraysMidY > y1):
+            #check hit ARMCURL BOX
+            if (modeArrayStartX < x and modeArrayStartY < y and modeArraysX[0] > x and modeArrayEndY > y) or (modeArrayStartX < x1 and modeArrayStartY < y1 and modeArraysX[0] > x1 and modeArrayEndY > y1):
                 selectedMode = "ARMCURL"
                 # 0が立っていない、つまり、初期状態である
-                if ModeBin & 0b111 == 0:
-                    ModeBin = 0b100
+                if ModeBin & 0b1111 == 0:
+                    ModeBin = 0b1000
 
                 # この対応indexに1が立っている。つまり、前と同じ場所にとどまっている。
-                elif ModeBin == 0b100:
+                elif ModeBin == 0b1000:
                     etime = time.time()
 
                 else:
                     # タイマーをリセットして、このindexを代入する
                     # timer reset
                     stime = time.time()
-                    ModeBin = 0b100
+                    ModeBin = 0b1000
+            #check hit SQUAT BOX
+            elif (modeArraysX[0] < x and modeArrayStartY < y and modeArraysX[1] > x and modeArrayEndY > y) or (modeArraysX[0] < x1 and modeArrayStartY < y1 and modeArraysX[1] > x1 and modeArrayEndY > y1):
+                selectedMode = "SQUAT"
+                if ModeBin & 0b1111 == 0:
+                    ModeBin = 0b0100
+                elif ModeBin == 0b0100:
+                    etime = time.time()
+                else:
+                    stime = time.time()
+                    ModeBin = 0b0100
+            #chek hit PUSH-UP
+            elif (modeArraysX[1] < x and modeArrayStartY < y and modeArrayEndX > x and modeArrayEndY > y ) or (modeArraysX[1] < x1 and modeArrayStartY < y1 and modeArrayEndX > x1 and modeArrayEndY > y1 ):
+                selectedMode = "PUSH-UP"
+                if ModeBin & 0b1111 == 0:
+                    ModeBin = 0b0010
+                elif ModeBin == 0b0010:
+                    etime = time.time()
+                else:
+                    stime = time.time()
+                    ModeBin = 0b0010
+            elif (x > okButtonStartX and y > okButtonStartY and x < okButtonEndX and y < okButtonEndY) or (x1 > okButtonStartX and y1 > okButtonStartY and x1 < okButtonEndX and y1 < okButtonEndY):
+                selectedMode = "OK"
+                if ModeBin & 0b1111 == 0:
+                   modeBin = 0b0001
+                elif ModeBin == 0b0001:
+                    etime = time.time()
+                else:
+                    stime = time.time()
+                    ModeBin = 0b0001
+
             else:
                 selectedMode = "None"
                 stime = time.time()
 
             passTime = etime - stime
-            print(passTime)
+
         
 
     except:
@@ -490,31 +519,58 @@ while True:
         #import traceback
         # traceback.print_exc()
         pass
-    # draw selected number. it should be counter  3 2 1
+    # passed 2 sec or not
+    # not pass any sec
+    print("selectedMode = "+selectedMode)
+    print("showSelectedMode = "+showSelectedMode)
     if passTime < 0:
         cv2.putText(img, "2", (selectedNumX, selectedNumY),
                     cv2.FONT_HERSHEY_PLAIN, 3, (0, 255, 0), 3, cv2.LINE_AA)
-    else:
+    #process which passed 2 sec
+    else:     
         timer = 2 - int(passTime)
-        # 3秒たった
-        if timer < 0:
-            if selectedNum == "DEL":
-                selectedNums.pop(-1)
-            elif selectedNum == "OK":
-                selectModeNum += 1
-            else:
-                selectedNums.append(selectedNum)
-            stime = time.time()
+        if selectModeNum == 0:
+            # passed 2 sec
+            if timer < 0:
+                if selectedNum == "DEL":
+                    selectedNums.pop(-1)
+                elif selectedNum == "OK":
+                    selectModeNum += 1
+                else:
+                    selectedNums.append(selectedNum)
+                stime = time.time()
+
+        elif selectModeNum == 1:
+            if timer < 0:
+                #check not select mode , then touch ok
+                
+               
+                if selectedMode == "OK" and showSelectedMode == "" or showSelectedMode == "None":
+                    print("please------")
+                    showSelectedMode = "Please select mode before touch OK button"
+                else:
+                    showSelectedMode = selectedMode
+
+                if selectedMode == "OK" and showSelectedMode != "Please select mode before touch OK button":
+                    ok = True
+                    print("GO NEXT SCENE")
+        
+                stime = time.time()
                 
 
-        cv2.putText(img, str(timer), (selectedNumX, selectedNumY),
-                    cv2.FONT_HERSHEY_PLAIN, 3, (0, 255, 0), 3, cv2.LINE_AA)
+    #process which draw nums or mode
+    if selectModeNum == 0:
+        showNums = "".join(selectedNums)
+        cv2.putText(img, showNums, (showTextX, showTextY),
+                cv2.FONT_HERSHEY_PLAIN, 3, (0, 255, 0), 3, cv2.LINE_AA)
+        
+    elif selectModeNum == 1:
+        cv2.putText(img, showSelectedMode, (showTextX, showTextY),
+                cv2.FONT_HERSHEY_PLAIN, 3, (0, 255, 0), 3, cv2.LINE_AA)
 
-    # draw selected numbers
-    showNumX = int(w * 0.1)
-    showNumY = int(h * 0.9)
-    showNums = "".join(selectedNums)
-    cv2.putText(img, showNums, (showNumX, showNumY),
+    
+    #draw timer nums
+    cv2.putText(img, str(timer), (selectedNumX, selectedNumY),
                 cv2.FONT_HERSHEY_PLAIN, 3, (0, 255, 0), 3, cv2.LINE_AA)
   
 
