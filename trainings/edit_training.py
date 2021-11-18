@@ -34,50 +34,39 @@ def cal_angle(a,b,c):
         
     return angle
 
+def getModeNum(mode,modes):
+    ans = "None"
+    for i in range(len(modes)):
+        if mode == modes[i]:
+            ans = mode
+            break
+    return mode
+
 cntForMode = 0
-modeIdx = 0
-modes = ["arm curl", "squat", "push-up" ]
+trainingModeNum = 0
+modes = ["ARMCURL", "SQUAT", "PUSH-UP"]
 for i in range(3):
     if modes[i] == args.mode:
-        modeIdx = i
+        trainingModeNum = i
         mode = modes[i]
-mode = modes[modeIdx]   
+mode = modes[trainingModeNum]   
 cnt = 0
 isBent = False
 
 
-def changeMode(a):
-    global modeIdx
-    global modes
-    global isBent
-    global cnt 
-    cnt = 0
-    isBent = False
-    modeIdx = int(a%3)
-    mode = modes[modeIdx]
-    return mode
+
     
-isReady = True
+selectedModeNum = 2
 startTime = time.time()
 limitCnt = args.cnt
 
 while True:
-    if isReady == False:
-        #img = cv2.imread("/home/kazutaka/codes/mediapipe_pose/data/images/training_imgs/white.png")
-        img = cv2.resize(img,(640,480))
-        cv2.imshow("img",img)
-        key = cv2.waitKey(1) & 0xFF
-        if key == ord('q'):
-            break
-
-    elif isReady == True:
+   
+    if selectedModeNum == 2:
         success, img = cap.read()
         img = cv2.resize(img, (640,480))
         #descript key
-        cv2.putText(img,"'s' to start",(0,450),cv2.FONT_HERSHEY_PLAIN,1,(0,0,255),1)
-        cv2.putText(img,"'p' to pose",(0,470),cv2.FONT_HERSHEY_PLAIN,1,(0,0,255),1)
-        cv2.putText(img,"'r' to reset count",(150,450),cv2.FONT_HERSHEY_PLAIN,1,(0,0,255),1)
-        cv2.putText(img,"'q' to quit",(150,470),cv2.FONT_HERSHEY_PLAIN,1,(0,0,255),1)
+        
 
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         
@@ -92,10 +81,6 @@ while True:
 
         #wait 3 sec at execed
 
-
-            
-        
-
         #extract specific landmark
         try:
             #----example extract specific landmark----
@@ -105,7 +90,7 @@ while True:
             landmarks = results.pose_landmarks.landmark
 
             #detect down and up, mode switch
-            if modeIdx == 0:
+            if trainingModeNum == 0:
                 Rshoulder = [landmarks[mpPose.PoseLandmark.RIGHT_SHOULDER.value].x,landmarks[mpPose.PoseLandmark.RIGHT_SHOULDER.value].y]
                 Relbow = [landmarks[mpPose.PoseLandmark.RIGHT_ELBOW.value].x,landmarks[mpPose.PoseLandmark.RIGHT_ELBOW.value].y]
                 Rwrist =[landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].x,landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].y]
@@ -124,7 +109,7 @@ while True:
                         pass
                 cv2.putText(img, str(angle), tuple(np.multiply(Relbow, [640,480]).astype(int)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2, cv2.LINE_AA)
 
-            elif modeIdx == 1:
+            elif trainingModeNum == 1:
                 Rhip = [landmarks[mpPose.PoseLandmark.RIGHT_HIP.value].x,landmarks[mpPose.PoseLandmark.RIGHT_HIP.value].y]
                 Rknee = [landmarks[mpPose.PoseLandmark.RIGHT_KNEE.value].x,landmarks[mpPose.PoseLandmark.RIGHT_KNEE.value].y]
                 Rankle = [landmarks[mpPose.PoseLandmark.RIGHT_ANKLE.value].x,landmarks[mpPose.PoseLandmark.RIGHT_ANKLE.value].y]
@@ -154,7 +139,7 @@ while True:
                 
                 cv2.putText(img, str(angle), tuple(np.multiply(Rknee, [640,480]).astype(int)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2, cv2.LINE_AA)
             
-            elif modeIdx == 2:
+            elif trainingModeNum == 2:
                 Rshoulder = [landmarks[mpPose.PoseLandmark.RIGHT_SHOULDER.value].x,landmarks[mpPose.PoseLandmark.RIGHT_SHOULDER.value].y]
                 Relbow = [landmarks[mpPose.PoseLandmark.RIGHT_ELBOW.value].x,landmarks[mpPose.PoseLandmark.RIGHT_ELBOW.value].y]
                 Rwrist =[landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].x,landmarks[mpPose.PoseLandmark.RIGHT_WRIST.value].y]
@@ -194,33 +179,10 @@ while True:
         #show mode
         cv2.putText(img,"MODE :" + str(mode),(330,50),cv2.FONT_HERSHEY_PLAIN,2,(0,0,255),2)
 
-        
-        #get key
-        if key == ord('q'):
-            break
 
-        #reset cnt
-        if key == ord('r'):
-            cnt = 0
-        
-        #start counting
-        if key == ord('s'):
-            print("start")
-
-        #pose counting
-        if key == ord('p'):
-            print("stop")
-
-        if key == ord('m'):
-            print("changemode")
-            cntForMode = cntForMode + 1
-            mode = changeMode(cntForMode)
-
-        
-        #resized_img = cv2.resize(img,(800,400))
         
         cv2.imshow("Image",img)
-        print(img.shape[0],img.shape[1])
+
 
         cv2.waitKey(1)
 
