@@ -1,0 +1,808 @@
+Listening on enp0s31f6
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     33.0Kb     33.0Kb     33.0Kb     8.25KB
+     144.195.83.126                           <=      604Kb      604Kb      604Kb      151KB
+   2 my-ubuntu                                =>       304b       304b       304b        76B
+     r025169.203112.miinet.jp                 <=       304b       304b       304b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     33.3Kb     33.3Kb     33.3Kb
+Total receive rate:                                   605Kb      605Kb      605Kb
+Total send and receive rate:                          638Kb      638Kb      638Kb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     33.3Kb      605Kb      638Kb
+Cumulative (sent/received/total):                    8.32KB      151KB      159KB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     74.0Kb     53.5Kb     53.5Kb     26.7KB
+     144.195.83.126                           <=     1.15Mb      892Kb      892Kb      446KB
+   2 my-ubuntu                                =>     2.75Kb     1.38Kb     1.38Kb       704B
+     buffalo.setup                            <=     3.66Kb     1.83Kb     1.83Kb       937B
+   3 my-ubuntu                                =>         0b       152b       152b        76B
+     r025169.203112.miinet.jp                 <=         0b       152b       152b        76B
+   4 my-ubuntu                                =>       304b       152b       152b        76B
+     tama.paina.net                           <=       304b       152b       152b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     77.0Kb     55.2Kb     55.2Kb
+Total receive rate:                                  1.16Mb      894Kb      894Kb
+Total send and receive rate:                         1.23Mb      949Kb      949Kb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     77.0Kb     1.16Mb     1.23Mb
+Cumulative (sent/received/total):                    27.6KB      447KB      475KB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>      148Kb     85.0Kb     85.0Kb     63.8KB
+     144.195.83.126                           <=     1.13Mb      982Kb      982Kb      736KB
+   2 my-ubuntu                                =>       284b     1.01Kb     1.01Kb       775B
+     buffalo.setup                            <=       396b     1.35Kb     1.35Kb     1.01KB
+   3 my-ubuntu                                =>         0b       101b       101b        76B
+     r025169.203112.miinet.jp                 <=         0b       101b       101b        76B
+   4 my-ubuntu                                =>         0b       101b       101b        76B
+     tama.paina.net                           <=         0b       101b       101b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                      148Kb     86.2Kb     86.2Kb
+Total receive rate:                                  1.13Mb      983Kb      983Kb
+Total send and receive rate:                         1.28Mb     1.04Mb     1.04Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      148Kb     1.16Mb     1.28Mb
+Cumulative (sent/received/total):                    64.7KB      738KB      802KB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     70.7Kb     81.4Kb     81.4Kb     81.4KB
+     144.195.83.126                           <=     1.12Mb     1.00Mb     1.00Mb     1.00MB
+   2 my-ubuntu                                =>         0b       775b       775b       775B
+     buffalo.setup                            <=         0b     1.01Kb     1.01Kb     1.01KB
+   3 my-ubuntu                                =>         0b        76b        76b        76B
+     r025169.203112.miinet.jp                 <=         0b        76b        76b        76B
+   4 my-ubuntu                                =>         0b        76b        76b        76B
+     tama.paina.net                           <=         0b        76b        76b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     70.7Kb     82.3Kb     82.3Kb
+Total receive rate:                                  1.12Mb     1.00Mb     1.00Mb
+Total send and receive rate:                         1.19Mb     1.08Mb     1.08Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      148Kb     1.16Mb     1.28Mb
+Cumulative (sent/received/total):                    82.3KB     1.00MB     1.08MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     55.4Kb     76.2Kb     76.2Kb     95.3KB
+     144.195.83.126                           <=     1.13Mb     1.02Mb     1.02Mb     1.28MB
+   2 my-ubuntu                                =>         0b       620b       620b       775B
+     buffalo.setup                            <=         0b       829b       829b     1.01KB
+   3 my-ubuntu                                =>         0b        61b        61b        76B
+     r025169.203112.miinet.jp                 <=         0b        61b        61b        76B
+   4 my-ubuntu                                =>         0b        61b        61b        76B
+     tama.paina.net                           <=         0b        61b        61b        76B
+   5 my-ubuntu                                =>       292b        58b        58b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     55.7Kb     77.0Kb     77.0Kb
+Total receive rate:                                  1.13Mb     1.03Mb     1.03Mb
+Total send and receive rate:                         1.18Mb     1.10Mb     1.10Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      148Kb     1.16Mb     1.28Mb
+Cumulative (sent/received/total):                    96.3KB     1.28MB     1.38MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>      119Kb     93.4Kb     83.3Kb      125KB
+     144.195.83.126                           <=     1.16Mb     1.14Mb     1.05Mb     1.57MB
+   2 my-ubuntu                                =>       280b       676b       563b       845B
+     buffalo.setup                            <=       508b       930b       775b     1.14KB
+   3 my-ubuntu                                =>         0b        61b        51b        76B
+     tama.paina.net                           <=         0b        61b        51b        76B
+   4 my-ubuntu                                =>         0b        58b        49b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+   5 my-ubuntu                                =>         0b         0b        51b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        51b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                      119Kb     94.1Kb     84.0Kb
+Total receive rate:                                  1.16Mb     1.14Mb     1.05Mb
+Total send and receive rate:                         1.28Mb     1.23Mb     1.13Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      148Kb     1.16Mb     1.28Mb
+Cumulative (sent/received/total):                     126KB     1.57MB     1.70MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     44.5Kb     87.5Kb     77.8Kb      136KB
+     144.195.83.126                           <=     1.15Mb     1.14Mb     1.06Mb     1.86MB
+   2 my-ubuntu                                =>     1.25Kb       257b       183b       321B
+     170.114.15.158                           <=       988b       198b       141b       247B
+   3 my-ubuntu                                =>         0b       113b       483b       845B
+     buffalo.setup                            <=         0b       181b       665b     1.14KB
+   4 my-ubuntu                                =>         0b        58b        42b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+   5 my-ubuntu                                =>         0b         0b        43b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        43b        76B
+   6 my-ubuntu                                =>         0b         0b        43b        76B
+     tama.paina.net                           <=         0b         0b        43b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     45.7Kb     87.9Kb     78.5Kb
+Total receive rate:                                  1.15Mb     1.14Mb     1.06Mb
+Total send and receive rate:                         1.19Mb     1.22Mb     1.14Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      148Kb     1.16Mb     1.28Mb
+Cumulative (sent/received/total):                     137KB     1.86MB     1.99MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     27.3Kb     63.3Kb     71.5Kb      143KB
+     144.195.83.126                           <=     1.15Mb     1.14Mb     1.07Mb     2.15MB
+   2 my-ubuntu                                =>         0b       257b       160b       321B
+     170.114.15.158                           <=         0b       198b       124b       247B
+   3 my-ubuntu                                =>       292b       114b       459b       918B
+     buffalo.setup                            <=       600b       222b       656b     1.28KB
+   4 my-ubuntu                                =>         0b        58b        36b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+   5 my-ubuntu                                =>         0b         0b        38b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        38b        76B
+   6 my-ubuntu                                =>         0b         0b        38b        76B
+     tama.paina.net                           <=         0b         0b        38b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     27.6Kb     63.7Kb     72.2Kb
+Total receive rate:                                  1.15Mb     1.14Mb     1.07Mb
+Total send and receive rate:                         1.18Mb     1.20Mb     1.14Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      148Kb     1.16Mb     1.28Mb
+Cumulative (sent/received/total):                     144KB     2.15MB     2.29MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>      177Kb     84.6Kb     83.2Kb      187KB
+     144.195.83.126                           <=     1.11Mb     1.14Mb     1.08Mb     2.42MB
+   2 my-ubuntu                                =>         0b       257b       143b       321B
+     170.114.15.158                           <=         0b       198b       110b       247B
+   3 my-ubuntu                                =>         0b       114b       408b       918B
+     buffalo.setup                            <=         0b       222b       584b     1.28KB
+   4 my-ubuntu                                =>       304b        61b        34b        76B
+     132.226.11.60                            <=       304b        61b        34b        76B
+   5 my-ubuntu                                =>         0b        58b        32b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+   6 my-ubuntu                                =>         0b         0b        34b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        34b        76B
+   7 my-ubuntu                                =>         0b         0b        34b        76B
+     tama.paina.net                           <=         0b         0b        34b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                      177Kb     85.1Kb     83.9Kb
+Total receive rate:                                  1.11Mb     1.14Mb     1.08Mb
+Total send and receive rate:                         1.29Mb     1.22Mb     1.16Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.16Mb     1.29Mb
+Cumulative (sent/received/total):                     189KB     2.43MB     2.61MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>      108Kb     95.2Kb     85.7Kb      214KB
+     144.195.83.126                           <=     1.12Mb     1.14Mb     1.08Mb     2.70MB
+   2 my-ubuntu                                =>       288b       172b       396b       990B
+     buffalo.setup                            <=       588b       339b       584b     1.43KB
+   3 my-ubuntu                                =>         0b       257b       128b       321B
+     170.114.15.158                           <=         0b       198b        99b       247B
+   4 my-ubuntu                                =>         0b        61b        30b        76B
+     132.226.11.60                            <=         0b        61b        30b        76B
+   5 my-ubuntu                                =>         0b         0b        30b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        30b        76B
+   6 my-ubuntu                                =>         0b         0b        30b        76B
+     tama.paina.net                           <=         0b         0b        30b        76B
+   7 my-ubuntu                                =>         0b         0b        29b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                      108Kb     95.6Kb     86.3Kb
+Total receive rate:                                  1.12Mb     1.14Mb     1.08Mb
+Total send and receive rate:                         1.22Mb     1.23Mb     1.17Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.16Mb     1.29Mb
+Cumulative (sent/received/total):                     216KB     2.71MB     2.92MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     45.9Kb     80.6Kb     82.1Kb      226KB
+     144.195.83.126                           <=     1.07Mb     1.12Mb     1.08Mb     2.97MB
+   2 my-ubuntu                                =>         0b       257b       117b       321B
+     170.114.15.158                           <=         0b       198b        90b       247B
+   3 my-ubuntu                                =>         0b       116b       360b       990B
+     buffalo.setup                            <=         0b       238b       531b     1.43KB
+   4 my-ubuntu                                =>         0b        61b        28b        76B
+     132.226.11.60                            <=         0b        61b        28b        76B
+   5 my-ubuntu                                =>         0b         0b        28b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        28b        76B
+   6 my-ubuntu                                =>         0b         0b        28b        76B
+     tama.paina.net                           <=         0b         0b        28b        76B
+   7 my-ubuntu                                =>         0b         0b        27b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     45.9Kb     81.0Kb     82.6Kb
+Total receive rate:                                  1.07Mb     1.12Mb     1.08Mb
+Total send and receive rate:                         1.11Mb     1.20Mb     1.16Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.16Mb     1.29Mb
+Cumulative (sent/received/total):                     227KB     2.97MB     3.19MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     35.7Kb     78.8Kb     78.2Kb      235KB
+     144.195.83.126                           <=     0.99Mb     1.09Mb     1.07Mb     3.22MB
+   2 my-ubuntu                                =>         0b       116b       330b       990B
+     buffalo.setup                            <=         0b       238b       487b     1.43KB
+   3 my-ubuntu                                =>         0b        61b        25b        76B
+     132.226.11.60                            <=         0b        61b        25b        76B
+   4 my-ubuntu                                =>         0b         0b       107b       321B
+     170.114.15.158                           <=         0b         0b        82b       247B
+   5 my-ubuntu                                =>         0b         0b        25b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        25b        76B
+   6 my-ubuntu                                =>         0b         0b        25b        76B
+     tama.paina.net                           <=         0b         0b        25b        76B
+   7 my-ubuntu                                =>         0b         0b        24b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     35.7Kb     79.0Kb     78.7Kb
+Total receive rate:                                  0.99Mb     1.09Mb     1.07Mb
+Total send and receive rate:                         1.03Mb     1.17Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.16Mb     1.29Mb
+Cumulative (sent/received/total):                     236KB     3.22MB     3.45MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>      108Kb     95.0Kb     80.5Kb      262KB
+     144.195.83.126                           <=      971Kb     1.05Mb     1.06Mb     3.45MB
+   2 my-ubuntu                                =>         0b        58b       305b       990B
+     buffalo.setup                            <=         0b       118b       449b     1.43KB
+   3 my-ubuntu                                =>         0b        61b        23b        76B
+     132.226.11.60                            <=         0b        61b        23b        76B
+   4 my-ubuntu                                =>         0b         0b        99b       321B
+     170.114.15.158                           <=         0b         0b        76b       247B
+   5 my-ubuntu                                =>         0b         0b        23b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        23b        76B
+   6 my-ubuntu                                =>         0b         0b        23b        76B
+     tama.paina.net                           <=         0b         0b        23b        76B
+   7 my-ubuntu                                =>         0b         0b        22b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                      108Kb     95.1Kb     81.0Kb
+Total receive rate:                                   971Kb     1.05Mb     1.06Mb
+Total send and receive rate:                         1.05Mb     1.14Mb     1.14Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.16Mb     1.29Mb
+Cumulative (sent/received/total):                     263KB     3.46MB     3.71MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     97.5Kb     79.1Kb     81.7Kb      286KB
+     144.195.83.126                           <=     1.09Mb     1.04Mb     1.06Mb     3.73MB
+   2 my-ubuntu                                =>         0b        58b       283b       990B
+     buffalo.setup                            <=         0b       118b       417b     1.43KB
+   3 my-ubuntu                                =>       328b        66b       115b       403B
+     170.114.15.158                           <=       208b        42b        85b       299B
+   4 my-ubuntu                                =>         0b         0b        22b        76B
+     132.226.11.60                            <=         0b         0b        22b        76B
+   5 my-ubuntu                                =>         0b         0b        22b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        22b        76B
+   6 my-ubuntu                                =>         0b         0b        22b        76B
+     tama.paina.net                           <=         0b         0b        22b        76B
+   7 my-ubuntu                                =>         0b         0b        21b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     97.8Kb     79.2Kb     82.2Kb
+Total receive rate:                                  1.09Mb     1.04Mb     1.07Mb
+Total send and receive rate:                         1.18Mb     1.12Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.16Mb     1.29Mb
+Cumulative (sent/received/total):                     288KB     3.73MB     4.01MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     94.0Kb     76.3Kb     82.5Kb      310KB
+     144.195.83.126                           <=     1.16Mb     1.05Mb     1.07Mb     4.02MB
+   2 my-ubuntu                                =>         0b        66b       107b       403B
+     170.114.15.158                           <=         0b        42b        80b       299B
+   3 my-ubuntu                                =>         0b         0b       264b       990B
+     buffalo.setup                            <=         0b         0b       389b     1.43KB
+   4 my-ubuntu                                =>         0b         0b        20b        76B
+     132.226.11.60                            <=         0b         0b        20b        76B
+   5 my-ubuntu                                =>         0b         0b        20b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        20b        76B
+   6 my-ubuntu                                =>         0b         0b        20b        76B
+     tama.paina.net                           <=         0b         0b        20b        76B
+   7 my-ubuntu                                =>         0b         0b        19b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     94.0Kb     76.3Kb     83.0Kb
+Total receive rate:                                  1.16Mb     1.05Mb     1.07Mb
+Total send and receive rate:                         1.25Mb     1.13Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.16Mb     1.29Mb
+Cumulative (sent/received/total):                     311KB     4.02MB     4.32MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     21.6Kb     71.4Kb     78.7Kb      315KB
+     144.195.83.126                           <=     1.14Mb     1.07Mb     1.08Mb     4.30MB
+   2 my-ubuntu                                =>         0b        66b       101b       403B
+     170.114.15.158                           <=         0b        42b        75b       299B
+   3 my-ubuntu                                =>         0b         0b       248b       990B
+     buffalo.setup                            <=         0b         0b       365b     1.43KB
+   4 my-ubuntu                                =>         0b         0b        19b        76B
+     132.226.11.60                            <=         0b         0b        19b        76B
+   5 my-ubuntu                                =>         0b         0b        19b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        19b        76B
+   6 my-ubuntu                                =>         0b         0b        19b        76B
+     tama.paina.net                           <=         0b         0b        19b        76B
+   7 my-ubuntu                                =>         0b         0b        18b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     21.6Kb     71.5Kb     79.2Kb
+Total receive rate:                                  1.14Mb     1.07Mb     1.08Mb
+Total send and receive rate:                         1.16Mb     1.14Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.16Mb     1.29Mb
+Cumulative (sent/received/total):                     317KB     4.30MB     4.61MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     27.8Kb     69.8Kb     75.7Kb      322KB
+     144.195.83.126                           <=     1.12Mb     1.09Mb     1.08Mb     4.58MB
+   2 my-ubuntu                                =>       276b        55b       249b     1.03KB
+     buffalo.setup                            <=       424b        85b       368b     1.53KB
+   3 my-ubuntu                                =>       304b        61b        18b        76B
+     excalibur.prolixium.com                  <=       304b        61b        18b        76B
+   4 my-ubuntu                                =>         0b        66b        95b       403B
+     170.114.15.158                           <=         0b        42b        70b       299B
+   5 my-ubuntu                                =>         0b         0b        18b        76B
+     132.226.11.60                            <=         0b         0b        18b        76B
+   6 my-ubuntu                                =>         0b         0b        18b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        18b        76B
+   7 my-ubuntu                                =>         0b         0b        18b        76B
+     tama.paina.net                           <=         0b         0b        18b        76B
+   8 my-ubuntu                                =>         0b         0b        17b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     28.3Kb     70.0Kb     76.2Kb
+Total receive rate:                                  1.12Mb     1.09Mb     1.08Mb
+Total send and receive rate:                         1.15Mb     1.16Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.16Mb     1.29Mb
+Cumulative (sent/received/total):                     324KB     4.58MB     4.90MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     20.9Kb     52.4Kb     72.7Kb      327KB
+     144.195.83.126                           <=     1.17Mb     1.14Mb     1.08Mb     4.87MB
+   2 my-ubuntu                                =>         0b        55b       235b     1.03KB
+     buffalo.setup                            <=         0b        85b       348b     1.53KB
+   3 my-ubuntu                                =>         0b        61b        17b        76B
+     excalibur.prolixium.com                  <=         0b        61b        17b        76B
+   4 my-ubuntu                                =>         0b        66b        90b       403B
+     170.114.15.158                           <=         0b        42b        66b       299B
+   5 my-ubuntu                                =>         0b         0b        17b        76B
+     132.226.11.60                            <=         0b         0b        17b        76B
+   6 my-ubuntu                                =>         0b         0b        17b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        17b        76B
+   7 my-ubuntu                                =>         0b         0b        17b        76B
+     tama.paina.net                           <=         0b         0b        17b        76B
+   8 my-ubuntu                                =>         0b         0b        16b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     20.9Kb     52.5Kb     73.1Kb
+Total receive rate:                                  1.17Mb     1.14Mb     1.08Mb
+Total send and receive rate:                         1.19Mb     1.19Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     329KB     4.88MB     5.20MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     23.1Kb     37.5Kb     70.1Kb      333KB
+     144.195.83.126                           <=     1.09Mb     1.14Mb     1.08Mb     5.15MB
+   2 my-ubuntu                                =>       296b       114b       239b     1.11KB
+     buffalo.setup                            <=       432b       171b       352b     1.63KB
+   3 my-ubuntu                                =>         0b        61b        16b        76B
+     excalibur.prolixium.com                  <=         0b        61b        16b        76B
+   4 my-ubuntu                                =>       304b        61b        16b        76B
+     sv1.localdomain1.com                     <=       304b        61b        16b        76B
+   5 my-ubuntu                                =>         0b         0b        85b       403B
+     170.114.15.158                           <=         0b         0b        63b       299B
+   6 my-ubuntu                                =>         0b         0b        16b        76B
+     132.226.11.60                            <=         0b         0b        16b        76B
+   7 my-ubuntu                                =>         0b         0b        16b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        16b        76B
+   8 my-ubuntu                                =>         0b         0b        16b        76B
+     tama.paina.net                           <=         0b         0b        16b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     23.7Kb     37.7Kb     70.5Kb
+Total receive rate:                                  1.09Mb     1.14Mb     1.08Mb
+Total send and receive rate:                         1.12Mb     1.17Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     335KB     5.15MB     5.48MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     27.5Kb     24.2Kb     68.0Kb      340KB
+     144.195.83.126                           <=     1.05Mb     1.11Mb     1.08Mb     5.41MB
+   2 my-ubuntu                                =>         0b       114b       227b     1.11KB
+     buffalo.setup                            <=         0b       171b       335b     1.63KB
+   3 my-ubuntu                                =>         0b        61b        15b        76B
+     excalibur.prolixium.com                  <=         0b        61b        15b        76B
+   4 my-ubuntu                                =>       304b        61b        15b        76B
+     x.ns.gin.ntt.net                         <=       304b        61b        15b        76B
+   5 my-ubuntu                                =>         0b        61b        15b        76B
+     sv1.localdomain1.com                     <=         0b        61b        15b        76B
+   6 my-ubuntu                                =>         0b         0b        81b       403B
+     170.114.15.158                           <=         0b         0b        60b       299B
+   7 my-ubuntu                                =>         0b         0b        15b        76B
+     132.226.11.60                            <=         0b         0b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     r025169.203112.miinet.jp                 <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     tama.paina.net                           <=         0b         0b        15b        76B
+  10 my-ubuntu                                =>         0b         0b        15b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     27.8Kb     24.5Kb     68.4Kb
+Total receive rate:                                  1.05Mb     1.11Mb     1.08Mb
+Total send and receive rate:                         1.08Mb     1.14Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     342KB     5.41MB     5.75MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     21.5Kb     24.2Kb     67.4Kb      345KB
+     144.195.83.126                           <=     1.03Mb     1.09Mb     1.10Mb     5.67MB
+   2 my-ubuntu                                =>       588b       232b       256b     1.25KB
+     buffalo.setup                            <=       816b       334b       376b     1.83KB
+   3 my-ubuntu                                =>         0b        61b        15b        76B
+     excalibur.prolixium.com                  <=         0b        61b        15b        76B
+   4 my-ubuntu                                =>         0b        61b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b        61b        15b        76B
+   5 my-ubuntu                                =>         0b        61b        15b        76B
+     sv1.localdomain1.com                     <=         0b        61b        15b        76B
+   6 my-ubuntu                                =>       304b        61b        15b        76B
+     marinecat.net                            <=       304b        61b        15b        76B
+   7 my-ubuntu                                =>         0b         0b        81b       403B
+     170.114.15.158                           <=         0b         0b        60b       299B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     132.226.11.60                            <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     tama.paina.net                           <=         0b         0b        15b        76B
+  10 my-ubuntu                                =>         0b         0b        15b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     22.4Kb     24.6Kb     67.8Kb
+Total receive rate:                                  1.03Mb     1.09Mb     1.10Mb
+Total send and receive rate:                         1.06Mb     1.12Mb     1.17Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     347KB     5.67MB     6.01MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     24.2Kb     23.4Kb     64.9Kb      351KB
+     144.195.83.126                           <=     1.04Mb     1.08Mb     1.10Mb     5.93MB
+   2 my-ubuntu                                =>     1.25Kb       257b       145b       724B
+     170.114.15.158                           <=     1.17Kb       239b       120b       598B
+   3 my-ubuntu                                =>         0b       177b       115b       576B
+     buffalo.setup                            <=         0b       250b       188b       941B
+   4 my-ubuntu                                =>         0b        61b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b        61b        15b        76B
+   5 my-ubuntu                                =>         0b        61b        15b        76B
+     sv1.localdomain1.com                     <=         0b        61b        15b        76B
+   6 my-ubuntu                                =>         0b        61b        15b        76B
+     marinecat.net                            <=         0b        61b        15b        76B
+   7 my-ubuntu                                =>       304b        61b        15b        76B
+     103.202.216.35                           <=       304b        61b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     132.226.11.60                            <=         0b         0b        15b        76B
+  10 my-ubuntu                                =>         0b         0b        15b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     25.7Kb     24.1Kb     65.2Kb
+Total receive rate:                                  1.04Mb     1.08Mb     1.10Mb
+Total send and receive rate:                         1.07Mb     1.10Mb     1.16Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     354KB     5.93MB     6.28MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     27.6Kb     24.8Kb     58.9Kb      358KB
+     144.195.83.126                           <=     1.07Mb     1.06Mb     1.10Mb     6.20MB
+   2 my-ubuntu                                =>       292b       235b       116b       578B
+     buffalo.setup                            <=       508b       351b       194b       969B
+   3 my-ubuntu                                =>         0b       257b       145b       724B
+     170.114.15.158                           <=         0b       239b       120b       598B
+   4 my-ubuntu                                =>         0b        61b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b        61b        15b        76B
+   5 my-ubuntu                                =>         0b        61b        15b        76B
+     sv1.localdomain1.com                     <=         0b        61b        15b        76B
+   6 my-ubuntu                                =>         0b        61b        15b        76B
+     marinecat.net                            <=         0b        61b        15b        76B
+   7 my-ubuntu                                =>         0b        61b        15b        76B
+     103.202.216.35                           <=         0b        61b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     132.226.11.60                            <=         0b         0b        15b        76B
+  10 my-ubuntu                                =>         0b         0b        15b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     27.9Kb     25.5Kb     59.2Kb
+Total receive rate:                                  1.07Mb     1.06Mb     1.10Mb
+Total send and receive rate:                         1.10Mb     1.08Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     361KB     6.20MB     6.55MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     23.5Kb     24.9Kb     56.5Kb      364KB
+     144.195.83.126                           <=     1.11Mb     1.06Mb     1.09Mb     6.47MB
+   2 my-ubuntu                                =>         0b       257b       145b       724B
+     170.114.15.158                           <=         0b       239b       120b       598B
+   3 my-ubuntu                                =>         0b       176b       116b       578B
+     buffalo.setup                            <=         0b       265b       194b       969B
+   4 my-ubuntu                                =>         0b        61b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b        61b        15b        76B
+   5 my-ubuntu                                =>         0b        61b        15b        76B
+     marinecat.net                            <=         0b        61b        15b        76B
+   6 my-ubuntu                                =>         0b        61b        15b        76B
+     103.202.216.35                           <=         0b        61b        15b        76B
+   7 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     132.226.11.60                            <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     sv1.localdomain1.com                     <=         0b         0b        15b        76B
+  10 my-ubuntu                                =>         0b         0b        15b        73B
+     224.0.0.251                              <=         0b         0b         0b         0B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     23.5Kb     25.5Kb     56.9Kb
+Total receive rate:                                  1.11Mb     1.06Mb     1.10Mb
+Total send and receive rate:                         1.14Mb     1.09Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     367KB     6.48MB     6.84MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     31.7Kb     25.7Kb     55.3Kb      372KB
+     144.195.83.126                           <=     1.16Mb     1.08Mb     1.10Mb     6.76MB
+   2 my-ubuntu                                =>         0b       257b       145b       724B
+     170.114.15.158                           <=         0b       239b       120b       598B
+   3 my-ubuntu                                =>         0b       176b       116b       578B
+     buffalo.setup                            <=         0b       265b       194b       969B
+   4 my-ubuntu                                =>         0b        61b        15b        76B
+     marinecat.net                            <=         0b        61b        15b        76B
+   5 my-ubuntu                                =>         0b        61b        15b        76B
+     103.202.216.35                           <=         0b        61b        15b        76B
+   6 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   7 my-ubuntu                                =>         0b         0b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b         0b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     132.226.11.60                            <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     sv1.localdomain1.com                     <=         0b         0b        15b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     31.7Kb     26.2Kb     55.7Kb
+Total receive rate:                                  1.16Mb     1.08Mb     1.10Mb
+Total send and receive rate:                         1.19Mb     1.11Mb     1.15Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     375KB     6.77MB     7.13MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     27.5Kb     26.9Kb     50.8Kb      379KB
+     144.195.83.126                           <=     1.11Mb     1.10Mb     1.09Mb     7.04MB
+   2 my-ubuntu                                =>         0b       257b       145b       724B
+     170.114.15.158                           <=         0b       239b       120b       598B
+   3 my-ubuntu                                =>         0b        58b       102b       508B
+     buffalo.setup                            <=         0b       102b       168b       842B
+   4 my-ubuntu                                =>         0b        61b        15b        76B
+     103.202.216.35                           <=         0b        61b        15b        76B
+   5 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   6 my-ubuntu                                =>         0b         0b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b         0b        15b        76B
+   7 my-ubuntu                                =>         0b         0b        15b        76B
+     132.226.11.60                            <=         0b         0b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     sv1.localdomain1.com                     <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     marinecat.net                            <=         0b         0b        15b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     27.5Kb     27.3Kb     51.1Kb
+Total receive rate:                                  1.11Mb     1.10Mb     1.09Mb
+Total send and receive rate:                         1.13Mb     1.13Mb     1.14Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     381KB     7.04MB     7.42MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     76.6Kb     37.4Kb     52.4Kb      398KB
+     144.195.83.126                           <=     1.08Mb     1.11Mb     1.09Mb     7.31MB
+   2 my-ubuntu                                =>         0b        58b       102b       508B
+     buffalo.setup                            <=         0b       102b       168b       842B
+   3 my-ubuntu                                =>       304b        61b        15b        76B
+     82-64-172-48.subs.proxad.net             <=       304b        61b        15b        76B
+   4 my-ubuntu                                =>         0b         0b        81b       724B
+     170.114.15.158                           <=         0b         0b        70b       598B
+   5 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   6 my-ubuntu                                =>         0b         0b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b         0b        15b        76B
+   7 my-ubuntu                                =>         0b         0b        15b        76B
+     132.226.11.60                            <=         0b         0b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     sv1.localdomain1.com                     <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     marinecat.net                            <=         0b         0b        15b        76B
+  10 my-ubuntu                                =>         0b         0b        15b        76B
+     103.202.216.35                           <=         0b         0b        15b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     76.9Kb     37.5Kb     52.7Kb
+Total receive rate:                                  1.08Mb     1.11Mb     1.09Mb
+Total send and receive rate:                         1.16Mb     1.14Mb     1.14Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     401KB     7.32MB     7.71MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     23.1Kb     36.5Kb     52.2Kb      404KB
+     144.195.83.126                           <=      930Kb     1.08Mb     1.08Mb     7.54MB
+   2 my-ubuntu                                =>       284b        57b       101b       506B
+     buffalo.setup                            <=       452b        90b       161b       805B
+   3 my-ubuntu                                =>         0b        61b        15b        76B
+     82-64-172-48.subs.proxad.net             <=         0b        61b        15b        76B
+   4 my-ubuntu                                =>         0b         0b        81b       724B
+     170.114.15.158                           <=         0b         0b        70b       598B
+   5 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   6 my-ubuntu                                =>         0b         0b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b         0b        15b        76B
+   7 my-ubuntu                                =>         0b         0b        15b        76B
+     132.226.11.60                            <=         0b         0b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     sv1.localdomain1.com                     <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     marinecat.net                            <=         0b         0b        15b        76B
+  10 my-ubuntu                                =>         0b         0b        15b        76B
+     103.202.216.35                           <=         0b         0b        15b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     23.4Kb     36.6Kb     52.4Kb
+Total receive rate:                                   930Kb     1.08Mb     1.08Mb
+Total send and receive rate:                          954Kb     1.11Mb     1.13Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      177Kb     1.17Mb     1.29Mb
+Cumulative (sent/received/total):                     407KB     7.54MB     7.94MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     20.0Kb     35.8Kb     44.3Kb      409KB
+     144.195.83.126                           <=      984Kb     1.04Mb     1.07Mb     7.78MB
+   2 my-ubuntu                                =>         0b        57b       101b       506B
+     buffalo.setup                            <=         0b        90b       161b       805B
+   3 my-ubuntu                                =>         0b        61b        15b        76B
+     82-64-172-48.subs.proxad.net             <=         0b        61b        15b        76B
+   4 my-ubuntu                                =>         0b         0b        81b       724B
+     170.114.15.158                           <=         0b         0b        70b       598B
+   5 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   6 my-ubuntu                                =>         0b         0b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b         0b        15b        76B
+   7 my-ubuntu                                =>         0b         0b        15b        76B
+     sv1.localdomain1.com                     <=         0b         0b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     marinecat.net                            <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     103.202.216.35                           <=         0b         0b        15b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     20.0Kb     35.9Kb     44.6Kb
+Total receive rate:                                   984Kb     1.04Mb     1.07Mb
+Total send and receive rate:                         0.98Mb     1.08Mb     1.11Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      108Kb     1.17Mb     1.25Mb
+Cumulative (sent/received/total):                     412KB     7.78MB     8.19MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     24.6Kb     34.4Kb     40.1Kb      415KB
+     144.195.83.126                           <=      928Kb     0.99Mb     1.06Mb     8.01MB
+   2 my-ubuntu                                =>         0b        57b        87b       434B
+     buffalo.setup                            <=         0b        90b       132b       658B
+   3 my-ubuntu                                =>         0b        61b        15b        76B
+     82-64-172-48.subs.proxad.net             <=         0b        61b        15b        76B
+   4 my-ubuntu                                =>         0b         0b        81b       724B
+     170.114.15.158                           <=         0b         0b        70b       598B
+   5 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   6 my-ubuntu                                =>         0b         0b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b         0b        15b        76B
+   7 my-ubuntu                                =>         0b         0b        15b        76B
+     sv1.localdomain1.com                     <=         0b         0b        15b        76B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     marinecat.net                            <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     103.202.216.35                           <=         0b         0b        15b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     24.6Kb     34.5Kb     40.4Kb
+Total receive rate:                                   928Kb     0.99Mb     1.06Mb
+Total send and receive rate:                          952Kb     1.03Mb     1.10Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      108Kb     1.17Mb     1.25Mb
+Cumulative (sent/received/total):                     418KB     8.01MB     8.42MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     55.5Kb     40.0Kb     40.6Kb      429KB
+     144.195.83.126                           <=     1.08Mb     0.99Mb     1.06Mb     8.28MB
+   2 my-ubuntu                                =>       876b       232b       131b       653B
+     buffalo.setup                            <=     1.21Kb       339b       194b       969B
+   3 my-ubuntu                                =>       304b        61b        15b        76B
+     ntp-b2.nict.go.jp                        <=       304b        61b        15b        76B
+   4 my-ubuntu                                =>       304b        61b        15b        76B
+     chilipepper.canonical.com                <=       304b        61b        15b        76B
+   5 my-ubuntu                                =>       304b        61b        15b        76B
+     kuroa.me                                 <=       304b        61b        15b        76B
+   6 my-ubuntu                                =>         0b        61b        15b        76B
+     82-64-172-48.subs.proxad.net             <=         0b        61b        15b        76B
+   7 my-ubuntu                                =>         0b         0b        81b       724B
+     170.114.15.158                           <=         0b         0b        70b       598B
+   8 my-ubuntu                                =>         0b         0b        15b        76B
+     excalibur.prolixium.com                  <=         0b         0b        15b        76B
+   9 my-ubuntu                                =>         0b         0b        15b        76B
+     x.ns.gin.ntt.net                         <=         0b         0b        15b        76B
+  10 my-ubuntu                                =>         0b         0b        15b        76B
+     sv1.localdomain1.com                     <=         0b         0b        15b        76B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     57.2Kb     40.4Kb     40.9Kb
+Total receive rate:                                  1.08Mb     0.99Mb     1.06Mb
+Total send and receive rate:                         1.13Mb     1.03Mb     1.10Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      108Kb     1.17Mb     1.25Mb
+Cumulative (sent/received/total):                     432KB     8.28MB     8.70MB
+============================================================================================
+

@@ -1,0 +1,535 @@
+Listening on enp0s31f6
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>      586Kb      586Kb      586Kb      146KB
+     144.195.26.126                           <=      154Kb      154Kb      154Kb     38.6KB
+--------------------------------------------------------------------------------------------
+Total send rate:                                      586Kb      586Kb      586Kb
+Total receive rate:                                   154Kb      154Kb      154Kb
+Total send and receive rate:                          740Kb      740Kb      740Kb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                      586Kb      154Kb      740Kb
+Cumulative (sent/received/total):                     146KB     38.6KB      185KB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.19Mb      901Kb      901Kb      451KB
+     144.195.26.126                           <=      326Kb      240Kb      240Kb      120KB
+   2 my-ubuntu                                =>     1.12Kb       576b       576b       288B
+     buffalo.setup                            <=     1.53Kb       782b       782b       391B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.19Mb      902Kb      902Kb
+Total receive rate:                                   328Kb      241Kb      241Kb
+Total send and receive rate:                         1.51Mb     1.12Mb     1.12Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.19Mb      328Kb     1.51Mb
+Cumulative (sent/received/total):                     451KB      121KB      571KB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.15Mb      994Kb      994Kb      746KB
+     144.195.26.126                           <=      331Kb      271Kb      271Kb      203KB
+   2 my-ubuntu                                =>         0b       384b       384b       288B
+     buffalo.setup                            <=         0b       521b       521b       391B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.15Mb      995Kb      995Kb
+Total receive rate:                                   331Kb      271Kb      271Kb
+Total send and receive rate:                         1.48Mb     1.24Mb     1.24Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.19Mb      331Kb     1.51Mb
+Cumulative (sent/received/total):                     746KB      203KB      949KB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.18Mb     1.02Mb     1.02Mb     1.02MB
+     144.195.26.126                           <=      362Kb      293Kb      293Kb      293KB
+   2 my-ubuntu                                =>         0b       288b       288b       288B
+     buffalo.setup                            <=         0b       391b       391b       391B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.18Mb     1.02Mb     1.02Mb
+Total receive rate:                                   362Kb      294Kb      294Kb
+Total send and receive rate:                         1.54Mb     1.31Mb     1.31Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.19Mb      362Kb     1.54Mb
+Cumulative (sent/received/total):                    1.02MB      294KB     1.31MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.19Mb     1.06Mb     1.06Mb     1.32MB
+     144.195.26.126                           <=      379Kb      310Kb      310Kb      388KB
+   2 my-ubuntu                                =>         0b       230b       230b       288B
+     buffalo.setup                            <=         0b       313b       313b       391B
+   3 my-ubuntu                                =>       328b        66b        66b        82B
+     170.114.15.134                           <=       208b        42b        42b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.19Mb     1.06Mb     1.06Mb
+Total receive rate:                                   379Kb      311Kb      311Kb
+Total send and receive rate:                         1.56Mb     1.36Mb     1.36Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.19Mb      379Kb     1.56Mb
+Cumulative (sent/received/total):                    1.32MB      388KB     1.70MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.21Mb     1.19Mb     1.08Mb     1.62MB
+     144.195.26.126                           <=      367Kb      353Kb      320Kb      480KB
+   2 my-ubuntu                                =>       292b       289b       241b       361B
+     buffalo.setup                            <=       600b       433b       361b       541B
+   3 my-ubuntu                                =>         0b        66b        55b        82B
+     170.114.15.134                           <=         0b        42b        35b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.21Mb     1.19Mb     1.08Mb
+Total receive rate:                                   368Kb      353Kb      320Kb
+Total send and receive rate:                         1.57Mb     1.53Mb     1.40Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    1.62MB      480KB     2.09MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.18Mb     1.18Mb     1.10Mb     1.92MB
+     144.195.26.126                           <=      340Kb      356Kb      323Kb      565KB
+   2 my-ubuntu                                =>         0b        58b       206b       361B
+     buffalo.setup                            <=         0b       120b       309b       541B
+   3 my-ubuntu                                =>         0b        66b        47b        82B
+     170.114.15.134                           <=         0b        42b        30b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.18Mb     1.18Mb     1.10Mb
+Total receive rate:                                   340Kb      356Kb      323Kb
+Total send and receive rate:                         1.52Mb     1.53Mb     1.41Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    1.92MB      565KB     2.47MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.19Mb     1.19Mb     1.11Mb     2.22MB
+     144.195.26.126                           <=      323Kb      354Kb      323Kb      646KB
+   2 my-ubuntu                                =>     1.25Kb       322b       202b       403B
+     170.114.15.134                           <=     1.17Kb       281b       176b       351B
+   3 my-ubuntu                                =>         0b        58b       180b       361B
+     buffalo.setup                            <=         0b       120b       270b       541B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.19Mb     1.19Mb     1.11Mb
+Total receive rate:                                   325Kb      355Kb      323Kb
+Total send and receive rate:                         1.51Mb     1.54Mb     1.42Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    2.22MB      647KB     2.85MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.14Mb     1.18Mb     1.11Mb     2.50MB
+     144.195.26.126                           <=      321Kb      346Kb      323Kb      726KB
+   2 my-ubuntu                                =>         0b       322b       179b       403B
+     170.114.15.134                           <=         0b       281b       156b       351B
+   3 my-ubuntu                                =>         0b        58b       160b       361B
+     buffalo.setup                            <=         0b       120b       240b       541B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.14Mb     1.18Mb     1.11Mb
+Total receive rate:                                   321Kb      347Kb      323Kb
+Total send and receive rate:                         1.46Mb     1.52Mb     1.43Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    2.50MB      727KB     3.21MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.20Mb     1.18Mb     1.12Mb     2.80MB
+     144.195.26.126                           <=      314Kb      333Kb      322Kb      805KB
+   2 my-ubuntu                                =>         0b       257b       161b       403B
+     170.114.15.134                           <=         0b       239b       140b       351B
+   3 my-ubuntu                                =>         0b        58b       144b       361B
+     buffalo.setup                            <=         0b       120b       216b       541B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.20Mb     1.18Mb     1.12Mb
+Total receive rate:                                   314Kb      334Kb      322Kb
+Total send and receive rate:                         1.50Mb     1.51Mb     1.44Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    2.80MB      805KB     3.59MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.20Mb     1.18Mb     1.13Mb     3.10MB
+     144.195.26.126                           <=      323Kb      324Kb      322Kb      885KB
+   2 my-ubuntu                                =>         0b       257b       147b       403B
+     170.114.15.134                           <=         0b       239b       128b       351B
+   3 my-ubuntu                                =>         0b         0b       131b       361B
+     buffalo.setup                            <=         0b         0b       197b       541B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.20Mb     1.18Mb     1.13Mb
+Total receive rate:                                   323Kb      324Kb      322Kb
+Total send and receive rate:                         1.51Mb     1.50Mb     1.44Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    3.10MB      886KB     3.97MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.14Mb     1.17Mb     1.13Mb     3.39MB
+     144.195.26.126                           <=      334Kb      323Kb      323Kb      969KB
+   2 my-ubuntu                                =>         0b       257b       134b       403B
+     170.114.15.134                           <=         0b       239b       117b       351B
+   3 my-ubuntu                                =>         0b         0b       120b       361B
+     buffalo.setup                            <=         0b         0b       180b       541B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.14Mb     1.17Mb     1.13Mb
+Total receive rate:                                   334Kb      323Kb      323Kb
+Total send and receive rate:                         1.47Mb     1.49Mb     1.45Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    3.39MB      969KB     4.34MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.17Mb     1.17Mb     1.13Mb     3.68MB
+     144.195.26.126                           <=      329Kb      324Kb      323Kb     1.03MB
+   2 my-ubuntu                                =>       208b        42b        16b        52B
+     tl-in-f188.1e100.net                     <=       208b        42b        16b        52B
+   3 my-ubuntu                                =>         0b         0b       111b       361B
+     buffalo.setup                            <=         0b         0b       166b       541B
+   4 my-ubuntu                                =>         0b         0b       124b       403B
+     170.114.15.134                           <=         0b         0b       108b       351B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.17Mb     1.17Mb     1.13Mb
+Total receive rate:                                   329Kb      324Kb      324Kb
+Total send and receive rate:                         1.50Mb     1.49Mb     1.45Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    3.68MB     1.03MB     4.71MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.18Mb     1.18Mb     1.14Mb     3.98MB
+     144.195.26.126                           <=      314Kb      323Kb      323Kb     1.10MB
+   2 my-ubuntu                                =>         0b        42b        15b        52B
+     tl-in-f188.1e100.net                     <=         0b        42b        15b        52B
+   3 my-ubuntu                                =>         0b         0b       103b       361B
+     buffalo.setup                            <=         0b         0b       155b       541B
+   4 my-ubuntu                                =>         0b         0b       115b       403B
+     170.114.15.134                           <=         0b         0b       100b       351B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.18Mb     1.18Mb     1.14Mb
+Total receive rate:                                   314Kb      323Kb      323Kb
+Total send and receive rate:                         1.49Mb     1.49Mb     1.45Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    3.98MB     1.10MB     5.08MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.16Mb     1.17Mb     1.14Mb     4.27MB
+     144.195.26.126                           <=      317Kb      323Kb      322Kb     1.18MB
+   2 my-ubuntu                                =>         0b        42b        14b        52B
+     tl-in-f188.1e100.net                     <=         0b        42b        14b        52B
+   3 my-ubuntu                                =>         0b         0b        96b       361B
+     buffalo.setup                            <=         0b         0b       144b       541B
+   4 my-ubuntu                                =>         0b         0b       107b       403B
+     170.114.15.134                           <=         0b         0b        94b       351B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.16Mb     1.17Mb     1.14Mb
+Total receive rate:                                   317Kb      323Kb      323Kb
+Total send and receive rate:                         1.47Mb     1.49Mb     1.45Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    4.27MB     1.18MB     5.45MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.19Mb     1.17Mb     1.14Mb     4.57MB
+     144.195.26.126                           <=      327Kb      324Kb      323Kb     1.26MB
+   2 my-ubuntu                                =>         0b        42b        13b        52B
+     tl-in-f188.1e100.net                     <=         0b        42b        13b        52B
+   3 my-ubuntu                                =>         0b         0b        90b       361B
+     buffalo.setup                            <=         0b         0b       135b       541B
+   4 my-ubuntu                                =>         0b         0b       101b       403B
+     170.114.15.134                           <=         0b         0b        88b       351B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.19Mb     1.17Mb     1.14Mb
+Total receive rate:                                   327Kb      324Kb      323Kb
+Total send and receive rate:                         1.51Mb     1.49Mb     1.46Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    4.57MB     1.26MB     5.83MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.17Mb     1.18Mb     1.14Mb     4.86MB
+     144.195.26.126                           <=      215Kb      300Kb      316Kb     1.31MB
+   2 my-ubuntu                                =>         0b        42b        12b        52B
+     tl-in-f188.1e100.net                     <=         0b        42b        12b        52B
+   3 my-ubuntu                                =>         0b         0b        85b       361B
+     buffalo.setup                            <=         0b         0b       127b       541B
+   4 my-ubuntu                                =>         0b         0b        95b       403B
+     170.114.15.134                           <=         0b         0b        83b       351B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.17Mb     1.18Mb     1.14Mb
+Total receive rate:                                   215Kb      300Kb      316Kb
+Total send and receive rate:                         1.38Mb     1.47Mb     1.45Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.21Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    4.86MB     1.31MB     6.17MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.22Mb     1.18Mb     1.15Mb     5.16MB
+     144.195.26.126                           <=      298Kb      294Kb      315Kb     1.39MB
+   2 my-ubuntu                                =>         0b         0b        80b       361B
+     buffalo.setup                            <=         0b         0b       120b       541B
+   3 my-ubuntu                                =>         0b         0b        90b       403B
+     170.114.15.134                           <=         0b         0b        78b       351B
+   4 my-ubuntu                                =>         0b         0b        12b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        12b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.22Mb     1.18Mb     1.15Mb
+Total receive rate:                                   298Kb      294Kb      315Kb
+Total send and receive rate:                         1.51Mb     1.47Mb     1.46Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    5.16MB     1.39MB     6.55MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.18Mb     1.19Mb     1.15Mb     5.46MB
+     144.195.26.126                           <=      335Kb      298Kb      316Kb     1.47MB
+   2 my-ubuntu                                =>         0b         0b        76b       361B
+     buffalo.setup                            <=         0b         0b       114b       541B
+   3 my-ubuntu                                =>         0b         0b        85b       403B
+     170.114.15.134                           <=         0b         0b        74b       351B
+   4 my-ubuntu                                =>         0b         0b        11b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        11b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.18Mb     1.19Mb     1.15Mb
+Total receive rate:                                   335Kb      298Kb      316Kb
+Total send and receive rate:                         1.51Mb     1.48Mb     1.46Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    5.46MB     1.47MB     6.93MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.20Mb     1.19Mb     1.15Mb     5.76MB
+     144.195.26.126                           <=      319Kb      299Kb      316Kb     1.55MB
+   2 my-ubuntu                                =>         0b         0b        72b       361B
+     buffalo.setup                            <=         0b         0b       108b       541B
+   3 my-ubuntu                                =>         0b         0b        81b       403B
+     170.114.15.134                           <=         0b         0b        70b       351B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.20Mb     1.19Mb     1.15Mb
+Total receive rate:                                   319Kb      299Kb      317Kb
+Total send and receive rate:                         1.51Mb     1.48Mb     1.46Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    5.76MB     1.55MB     7.30MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.19Mb     1.19Mb     1.18Mb     6.05MB
+     144.195.26.126                           <=      314Kb      296Kb      324Kb     1.62MB
+   2 my-ubuntu                                =>         0b         0b        72b       361B
+     buffalo.setup                            <=         0b         0b       108b       541B
+   3 my-ubuntu                                =>         0b         0b        81b       403B
+     170.114.15.134                           <=         0b         0b        70b       351B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.19Mb     1.19Mb     1.18Mb
+Total receive rate:                                   314Kb      296Kb      325Kb
+Total send and receive rate:                         1.49Mb     1.48Mb     1.50Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    6.06MB     1.62MB     7.68MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.19Mb     1.20Mb     1.18Mb     6.35MB
+     144.195.26.126                           <=      330Kb      319Kb      325Kb     1.70MB
+   2 my-ubuntu                                =>         0b         0b        81b       403B
+     170.114.15.134                           <=         0b         0b        70b       351B
+   3 my-ubuntu                                =>         0b         0b        15b        73B
+     buffalo.setup                            <=         0b         0b        30b       150B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.19Mb     1.20Mb     1.18Mb
+Total receive rate:                                   330Kb      319Kb      325Kb
+Total send and receive rate:                         1.52Mb     1.51Mb     1.50Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    6.35MB     1.70MB     8.06MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.17Mb     1.19Mb     1.18Mb     6.65MB
+     144.195.26.126                           <=      324Kb      324Kb      324Kb     1.78MB
+   2 my-ubuntu                                =>     1.25Kb       257b       145b       724B
+     170.114.15.134                           <=       988b       198b       120b       598B
+   3 my-ubuntu                                =>         0b         0b        15b        73B
+     buffalo.setup                            <=         0b         0b        30b       150B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.17Mb     1.19Mb     1.18Mb
+Total receive rate:                                   325Kb      325Kb      324Kb
+Total send and receive rate:                         1.49Mb     1.50Mb     1.50Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    6.65MB     1.78MB     8.43MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.16Mb     1.18Mb     1.18Mb     6.93MB
+     144.195.26.126                           <=      351Kb      328Kb      324Kb     1.87MB
+   2 my-ubuntu                                =>         0b       257b       145b       724B
+     170.114.15.134                           <=         0b       198b       120b       598B
+   3 my-ubuntu                                =>         0b         0b        15b        73B
+     buffalo.setup                            <=         0b         0b        30b       150B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.16Mb     1.18Mb     1.18Mb
+Total receive rate:                                   351Kb      328Kb      324Kb
+Total send and receive rate:                         1.50Mb     1.50Mb     1.50Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      379Kb     1.57Mb
+Cumulative (sent/received/total):                    6.94MB     1.87MB     8.80MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.21Mb     1.18Mb     1.18Mb     7.24MB
+     144.195.26.126                           <=      363Kb      336Kb      323Kb     1.96MB
+   2 my-ubuntu                                =>         0b       257b       128b       724B
+     170.114.15.134                           <=         0b       198b       109b       598B
+   3 my-ubuntu                                =>         0b         0b        15b        73B
+     buffalo.setup                            <=         0b         0b        30b       150B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.21Mb     1.18Mb     1.18Mb
+Total receive rate:                                   363Kb      337Kb      323Kb
+Total send and receive rate:                         1.56Mb     1.51Mb     1.50Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      368Kb     1.57Mb
+Cumulative (sent/received/total):                    7.24MB     1.96MB     9.19MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.19Mb     1.18Mb     1.18Mb     7.53MB
+     144.195.26.126                           <=      325Kb      339Kb      321Kb     2.03MB
+   2 my-ubuntu                                =>         0b       257b       128b       724B
+     170.114.15.134                           <=         0b       198b       109b       598B
+   3 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.19Mb     1.18Mb     1.18Mb
+Total receive rate:                                   325Kb      339Kb      321Kb
+Total send and receive rate:                         1.51Mb     1.51Mb     1.50Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      363Kb     1.56Mb
+Cumulative (sent/received/total):                    7.53MB     2.04MB     9.57MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.14Mb     1.17Mb     1.18Mb     7.82MB
+     144.195.26.126                           <=      331Kb      339Kb      320Kb     2.12MB
+   2 my-ubuntu                                =>       328b       322b       145b       806B
+     170.114.15.134                           <=       208b       239b       120b       650B
+   3 my-ubuntu                                =>       556b       111b        28b       139B
+     ec2-18-205-93-223.compute-1.amazonaws.c  <=       332b        66b        17b        83B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.14Mb     1.17Mb     1.18Mb
+Total receive rate:                                   332Kb      339Kb      320Kb
+Total send and receive rate:                         1.46Mb     1.50Mb     1.49Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      363Kb     1.56Mb
+Cumulative (sent/received/total):                    7.82MB     2.12MB     9.94MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.14Mb     1.17Mb     1.18Mb     8.10MB
+     144.195.26.126                           <=      328Kb      340Kb      321Kb     2.20MB
+   2 my-ubuntu                                =>         0b       111b        28b       139B
+     ec2-18-205-93-223.compute-1.amazonaws.c  <=         0b        66b        17b        83B
+   3 my-ubuntu                                =>         0b        66b        81b       806B
+     170.114.15.134                           <=         0b        42b        60b       650B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.14Mb     1.17Mb     1.18Mb
+Total receive rate:                                   328Kb      340Kb      321Kb
+Total send and receive rate:                         1.46Mb     1.50Mb     1.49Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      363Kb     1.56Mb
+Cumulative (sent/received/total):                    8.10MB     2.20MB     10.3MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.20Mb     1.17Mb     1.18Mb     8.40MB
+     144.195.26.126                           <=      318Kb      333Kb      320Kb     2.27MB
+   2 my-ubuntu                                =>         0b       111b        28b       139B
+     ec2-18-205-93-223.compute-1.amazonaws.c  <=         0b        66b        17b        83B
+   3 my-ubuntu                                =>         0b        66b        81b       806B
+     170.114.15.134                           <=         0b        42b        60b       650B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.20Mb     1.17Mb     1.18Mb
+Total receive rate:                                   318Kb      333Kb      320Kb
+Total send and receive rate:                         1.51Mb     1.50Mb     1.49Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      363Kb     1.56Mb
+Cumulative (sent/received/total):                    8.40MB     2.27MB     10.7MB
+============================================================================================
+
+   # Host name (port/service if enabled)            last 2s   last 10s   last 40s cumulative
+--------------------------------------------------------------------------------------------
+   1 my-ubuntu                                =>     1.17Mb     1.17Mb     1.18Mb     8.69MB
+     144.195.26.126                           <=      328Kb      326Kb      321Kb     2.35MB
+   2 my-ubuntu                                =>         0b       111b        28b       139B
+     ec2-18-205-93-223.compute-1.amazonaws.c  <=         0b        66b        17b        83B
+   3 my-ubuntu                                =>         0b        66b        81b       806B
+     170.114.15.134                           <=         0b        42b        60b       650B
+   4 my-ubuntu                                =>         0b         0b        10b        52B
+     tl-in-f188.1e100.net                     <=         0b         0b        10b        52B
+--------------------------------------------------------------------------------------------
+Total send rate:                                     1.17Mb     1.17Mb     1.18Mb
+Total receive rate:                                   328Kb      326Kb      321Kb
+Total send and receive rate:                         1.49Mb     1.48Mb     1.49Mb
+--------------------------------------------------------------------------------------------
+Peak rate (sent/received/total):                     1.22Mb      363Kb     1.56Mb
+Cumulative (sent/received/total):                    8.69MB     2.35MB     11.0MB
+============================================================================================
+

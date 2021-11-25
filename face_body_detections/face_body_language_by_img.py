@@ -14,6 +14,12 @@ mp_drawing = mp.solutions.drawing_utils #drawing helper
 mp_holistic = mp.solutions.holistic
 
 cap = cv2.VideoCapture(0)
+face_imgs_names = ["happy.png","sad.png","victory.png"]
+face_imgs =[]
+
+for i in range(3):
+    face_imgs.append(cv2.imread("./../data/images/face_imgs/"+face_imgs_names[i]))
+
 # Initiate holistic model
 with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
     
@@ -57,7 +63,6 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
                                  mp_drawing.DrawingSpec(color=(245,117,66), thickness=2, circle_radius=4),
                                  mp_drawing.DrawingSpec(color=(245,66,230), thickness=2, circle_radius=2)
                                  )
-        #check len
         
         
         # Export coordinates
@@ -86,6 +91,8 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
             body_language_prob = model.predict_proba(x)[0]
             print(body_language_class, body_language_prob)
 
+            cv2
+
         
         except:
             pass
@@ -93,7 +100,14 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
 
                         
         cv2.imshow('Raw Webcam Feed', image)
+        if body_language_class == "Happy":
+            face_img = face_imgs[0]
+        elif body_language_class =="Sad":
+            face_img = face_imgs[1]
+        elif body_language_class == "Victory":
+            face_img = face_imgs[2]
 
+        cv2.imshow("Only Image" ,face_img)
         if cv2.waitKey(10) & 0xFF == ord('q'):
             break
 
