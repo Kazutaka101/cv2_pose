@@ -14,10 +14,10 @@ mp_drawing = mp.solutions.drawing_utils #drawing helper
 mp_holistic = mp.solutions.holistic
 
 cap = cv2.VideoCapture(0)
-face_imgs_names = ["happy.png","sad.png","victory.png"]
+face_imgs_names = ["happy.png","soso.png","yarn.png","away.png"]
 face_imgs =[]
 
-for i in range(3):
+for i in range(4):
     face_imgs.append(cv2.imread("./../data/images/face_imgs/"+face_imgs_names[i]))
 
 # Initiate holistic model
@@ -100,12 +100,16 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
 
                         
         cv2.imshow('Raw Webcam Feed', image)
+
         if body_language_class == "Happy":
+            print("happy")
             face_img = face_imgs[0]
-        elif body_language_class =="Sad":
+        elif body_language_class =="Soso":
             face_img = face_imgs[1]
-        elif body_language_class == "Victory":
+        elif body_language_class == "Yarn":
             face_img = face_imgs[2]
+        elif body_language_class == "Away":
+            face_img = face_imgs[3]
 
         cv2.imshow("Only Image" ,face_img)
         if cv2.waitKey(10) & 0xFF == ord('q'):
